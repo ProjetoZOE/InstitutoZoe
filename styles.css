@@ -42,7 +42,7 @@ nav {
 }
 
 .nav-list li {
-
+     
     letter-spacing: 3px;
     margin-left: 32px;
 }
@@ -60,6 +60,7 @@ nav {
     height: 2px;
     background: #f28705;
     margin: 8px;
+    transition: 0.3s;
 
 }
 
@@ -75,16 +76,18 @@ nav {
         right: 0;
         width: 50vw;
         height: 92vh;
-        background: rgb(251, 251, 251);
+        background: rgb(251, 251, 251);      
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
         transform: translateX(100%);
+        transition: transform 0.3s ease-in;
 
     }
     .nav-list li {
         margin-left: 0;
         opacity: 0;
+       
     }
     .mobile-menu {
         display: block;
@@ -98,10 +101,36 @@ nav {
 
 
 
+@keyframes navLinkFade {
+    from{
+     opacity: 0;
+     transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+.mobile-menu.active1 {
+    transform: rotate(-45deg) translate(-8px, -8px); 
+
+}
+
+.mobile-menu.active2 {
+  opacity: 0;  
+}
+
+.mobile-menu.active3 {
+   transform: rotate(45deg) translate(-5px, -7px); 
+}
+
+
 
 main {
 
     background-size: cover;
-    background-color: beige;
+    background-color: rgb(128, 128, 115);
     height: 92vh;
 }
