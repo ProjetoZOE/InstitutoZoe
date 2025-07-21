@@ -13,14 +13,16 @@ a {
 }
 
 a:hover {
-    opacity: 0.7;
+    scale: 1.1;
+    font-size: 18px;
+    color:  #04B2D9;   
 }
 
-.logo {
+.logo img {
+ 
+  height: 8vh; 
+  object-fit: contain; 
 
-    font-size: 24px;
-
-    letter-spacing: 4px;
 }
 
 nav {
@@ -113,16 +115,16 @@ nav {
 }
 
 
-.mobile-menu.active1 {
-    transform: rotate(-45deg) translate(-8px, -8px); 
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px); 
 
 }
 
-.mobile-menu.active2 {
+.mobile-menu.active .line2 {
   opacity: 0;  
 }
 
-.mobile-menu.active3 {
+.mobile-menu.active .line3 {
    transform: rotate(45deg) translate(-5px, -7px); 
 }
 
@@ -131,6 +133,6 @@ nav {
 main {
 
     background-size: cover;
-    background-color: rgb(128, 128, 115);
+    background-color: rgb(237, 237, 237);
     height: 92vh;
 }
