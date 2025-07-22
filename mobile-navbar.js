@@ -50,9 +50,21 @@ const mobileNavBar = new MobileNavBar(
     ".mobile-menu",
     ".nave-list",
     ".nave-list li",
+    "social-icons",
 )
 
 mobileNavBar.init();
+
+
+
+
+
+
+
+
+
+
+
 
 
 

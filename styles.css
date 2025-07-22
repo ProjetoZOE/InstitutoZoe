@@ -61,17 +61,20 @@ nav {
 .nave-list li {
 
     letter-spacing: 3px;
-    margin-left: 32px;
-    color: orange !important;
+    margin-left: 62px;
+    color: #f28705 !important;
     text-decoration: none !important;
 
 }
 
 
 
-
-
-
+.botao{
+  background-color: transparent;
+  border: none; /* remove a borda */
+  color: inherit; /* herda a cor do texto atual */
+  cursor: pointer;
+}
 
 
 
