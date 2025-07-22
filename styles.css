@@ -1,16 +1,23 @@
 * {
     margin: 0;
     padding: 0;
-
+    font-family: "Pompiere", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+    font-weight: 1000;
+    font-size: 20px;
 }
 
-html, body {
-  height: 100%;
+
+
+
+
+html,
+body {
+    height: 100%;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -41,8 +48,7 @@ nav {
 
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+    align-items: center; 
     background: rgb(251, 251, 251);
     color: #f28705;
     height: 8vh;
@@ -69,11 +75,13 @@ nav {
 
 
 
-.botao{
-  background-color: transparent;
-  border: none; /* remove a borda */
-  color: inherit; /* herda a cor do texto atual */
-  cursor: pointer;
+.botao {
+    background-color: transparent;
+    border: none;
+    /* remove a borda */
+    color: inherit;
+    /* herda a cor do texto atual */
+    cursor: pointer;
 }
 
 
@@ -184,30 +192,31 @@ nav {
 
 main {
 
-    
+
     background-color: rgb(237, 237, 237);
     padding: 20px;
-    flex: 1 0 auto; /* Faz o main crescer para empurrar o footer */
+    flex: 1 0 auto;
+    /* Faz o main crescer para empurrar o footer */
 }
 
 
 
 footer {
-  background-color: rgb(251, 251, 251);
-  color: #f28705;
-  padding: 20px 0;
-  font-family: 'Trebuchet MS', sans-serif;
-  border-top: 1px solid #ddd;
-  flex-shrink: 0; /* Evita que o footer encolha */
+    background-color: rgb(251, 251, 251);
+    color: #f28705;
+    padding: 20px 0;   
+    border-top: 1px solid #ddd;
+    flex-shrink: 0;
+    /* Evita que o footer encolha */
 }
 
 
 .social-link {
-  color: #f28705;
-  font-size: 24px;
-  transition: 0.3s;
+    color: #f28705;
+    font-size: 24px;
+    transition: 0.3s;
 }
 
 .social-link:hover {
-  opacity: 0.9;
+    opacity: 0.9;
 }
