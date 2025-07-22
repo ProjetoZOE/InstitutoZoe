@@ -7,9 +7,6 @@
 }
 
 
-
-
-
 html,
 body {
     height: 100%;
@@ -48,7 +45,7 @@ nav {
 
     display: flex;
     justify-content: space-around;
-    align-items: center; 
+    align-items: center;
     background: rgb(251, 251, 251);
     color: #f28705;
     height: 8vh;
@@ -74,7 +71,6 @@ nav {
 }
 
 
-
 .botao {
     background-color: transparent;
     border: none;
@@ -83,8 +79,6 @@ nav {
     /* herda a cor do texto atual */
     cursor: pointer;
 }
-
-
 
 
 .social-icons {
@@ -191,8 +185,6 @@ nav {
 
 
 main {
-
-
     background-color: rgb(237, 237, 237);
     padding: 20px;
     flex: 1 0 auto;
@@ -204,19 +196,10 @@ main {
 footer {
     background-color: rgb(251, 251, 251);
     color: #f28705;
-    padding: 20px 0;   
+    padding: 20px 0;
     border-top: 1px solid #ddd;
     flex-shrink: 0;
     /* Evita que o footer encolha */
 }
 
 
-.social-link {
-    color: #f28705;
-    font-size: 24px;
-    transition: 0.3s;
-}
-
-.social-link:hover {
-    opacity: 0.9;
-}
