@@ -29,7 +29,7 @@ a {
 
 a:hover {
     scale: 1.1;
-    font-size: 18px;
+    font-size: 23px;
     color: #04B2D9;
 
 }
@@ -74,9 +74,7 @@ nav {
 .botao {
     background-color: transparent;
     border: none;
-    /* remove a borda */
     color: inherit;
-    /* herda a cor do texto atual */
     cursor: pointer;
 }
 
@@ -185,10 +183,44 @@ nav {
 
 
 main {
-    background-color: rgb(237, 237, 237);
+    background-color: #F9F0E9;
     padding: 20px;
     flex: 1 0 auto;
     /* Faz o main crescer para empurrar o footer */
+}
+
+
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 50px;
+  right: 60px;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(20px); 
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.scroll-to-top i {
+  font-size: 2rem; 
+  color: #f28705; 
+}
+
+.scroll-to-top i:hover {
+  font-size: 2rem; 
+  color: #0d6efd; 
+}
+
+.scroll-to-top.show {
+  opacity: 1;
+  transform: translateY(0); 
 }
 
 

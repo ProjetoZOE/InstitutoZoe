@@ -12,7 +12,7 @@ class MobileNavBar {
 
 
     animateLinks() {
-        this.navLinks.forEach((link, index) => {          
+        this.navLinks.forEach((link, index) => {
             link.style.animation
                 ? (link.style.animation = "")
                 : (link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`);
@@ -24,7 +24,7 @@ class MobileNavBar {
     handleClick() {
 
         this.navList.classList.toggle(this.activeClass);
-        this.mobileMenu.classList.toggle(this.activeClass);       
+        this.mobileMenu.classList.toggle(this.activeClass);
         this.animateLinks();
     }
 
@@ -55,6 +55,28 @@ const mobileNavBar = new MobileNavBar(
 
 mobileNavBar.init();
 
+
+
+
+
+
+ const scrollBtn = document.getElementById('scrollToTopBtn');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      scrollBtn.classList.add('show');
+    } else {
+      scrollBtn.classList.remove('show');
+    }
+  });
+
+  scrollBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
 
 
 
