@@ -4,14 +4,14 @@
     font-family: "Pompiere", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
     font-weight: 1000;
     font-size: 20px;
-   
+
 }
 
 
 html,
 body {
     height: 100%;
-    overflow-x: hidden;
+
 }
 
 body {
@@ -47,7 +47,7 @@ a:hover {
 
 .logo img {
 
-    height: 8vh;
+    height: 9vh;
     object-fit: contain;
 
 }
@@ -161,7 +161,7 @@ nav {
         z-index: 1000;
     }
 
-    
+
 
 }
 
@@ -207,25 +207,8 @@ main {
 }
 
 
-.frase-fundo {
-  width: 100%; 
-  height: 50vh;
-  background-image: url('img/banner-bg.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 20px;
-}
-
-.frase-overlay h2 {
-  color: white;
-  font-size: 5rem;
-  text-align: center;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-  padding: 0 15px;
+.text-shadow {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
 
 
