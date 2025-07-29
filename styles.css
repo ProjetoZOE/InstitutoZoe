@@ -85,6 +85,18 @@ nav {
 
 }
 
+.dropdown-menu a{
+    padding-left: 0;
+}
+
+
+.dropdown-menu a:hover {
+    
+    background-color: transparent;
+}
+
+
+
 
 .botao {
     background-color: transparent;
@@ -137,9 +149,9 @@ nav {
     .nave-list {
 
         position: absolute;
-        top: 8vh;
+        top: 13vh;
         right: 0;
-        width: 50vw;
+        width: 100vw;
         height: 92vh;
         background: rgb(251, 251, 251);
         flex-direction: column;
@@ -265,7 +277,7 @@ main {
 .scroll-to-top i {
 
     font-size: 2rem;
-    color: #004ba8;
+    color: #e57b12;
 }
 
 .scroll-to-top i:hover {
