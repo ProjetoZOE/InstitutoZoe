@@ -1,10 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-
-
-
+    font-family: 'Inter Regular';
 }
 
 
@@ -85,13 +82,13 @@ nav {
 
 }
 
-.dropdown-menu a{
+.dropdown-menu a {
     padding-left: 0;
 }
 
 
 .dropdown-menu a:hover {
-    
+
     background-color: transparent;
 }
 
@@ -226,34 +223,34 @@ main {
 
 
 .banner-container {
-  background-color: var(--amarelo);
-  padding: 0;
-  margin: 0;
+    background-color: var(--amarelo);
+    padding: 0;
+    margin: 0;
 }
 
 .banner-img {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  border: none;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: none;
 }
 
 .video-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-  max-width: 100%;
-  margin: 0 auto;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .video-container iframe {
-  position: absolute;
-  top: 1;
-  left: 0;
-  width: 100%;
-  height: 100%;
+    position: absolute;
+    top: 1;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -294,10 +291,16 @@ main {
 
 
 footer {
-    background-color:#004ba8;
+    background-color: #004ba8;
     color: rgb(251, 251, 251);
     padding: 20px 0;
     border-top: 1px solid #ddd;
     flex-shrink: 0;
     /* Evita que o footer encolha */
+}
+
+
+@font-face {
+    font-family: 'Inter Regular';
+    src: url(assets/fonts/Inter-fontiko/Inter-Regular.ttf);
 }
