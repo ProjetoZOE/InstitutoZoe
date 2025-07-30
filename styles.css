@@ -99,11 +99,16 @@ a:hover {
 #apoiador.texto a{
     justify-content: center;
     text-align: center;
-    margin-left: 60px;
+    margin-left: 30px;
     color: #f8f8f8;
+    transition: 0.5s;
   
 }
 
+#apoiador.texto a:hover{
+   font-size: 42px;
+  
+}
 
 .logo img {
 
@@ -404,13 +409,13 @@ main {
 .scroll-to-top i {
 
     font-size: 2rem;
-    color: #e57b12;
+    color: #0C96CF;
 }
 
 .scroll-to-top i:hover {
 
 
-    color: #f28705;
+    color: #0C96CF;
 }
 
 .scroll-to-top.show {
