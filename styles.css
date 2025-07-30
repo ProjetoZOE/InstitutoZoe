@@ -81,15 +81,26 @@ nav {
 
 }
 
-.dropdown-menu a {
-    padding-left: 0;
+.nave-list button:hover{
+  color: #f28705;
+    
 }
 
 
-.dropdown-menu a:hover {
+.dropdown-menu li {   
+    margin: 10px;
+}
 
+
+.dropdown-menu a{
+    color: #004ba8;
+}
+
+.dropdown-menu a:hover{
+    color: #f28705;
     background-color: transparent;
 }
+
 
 
 
@@ -168,6 +179,11 @@ nav {
         display: block;
         z-index: 1000;
     }
+
+    .dropdown-menu li {   
+    margin: 15px;
+    
+}
 
 
 
