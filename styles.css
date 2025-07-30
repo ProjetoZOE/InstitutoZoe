@@ -92,22 +92,22 @@ a:hover {
     background-color: #e57b12;
 }
 
-#apoiador.texto h1{
+#apoiador.texto h1 {
     margin-left: 20px;
 }
 
-#apoiador.texto a{
+#apoiador.texto a {
     justify-content: center;
     text-align: center;
     margin-left: 30px;
     color: #f8f8f8;
     transition: 0.5s;
-  
+
 }
 
-#apoiador.texto a:hover{
-   font-size: 42px;
-  
+#apoiador.texto a:hover {
+    font-size: 42px;
+
 }
 
 .logo img {
@@ -119,7 +119,7 @@ a:hover {
 
 nav {
 
-   display: flex;
+    display: flex;
     justify-content: space-around;
     align-items: center;
     background: rgb(251, 251, 251);
@@ -252,17 +252,17 @@ nav {
 
     .nave-list {
 
-     position: fixed; 
-    top: 13vh; 
-    right: 0;
-    width: 100vw;
-    height: calc(100vh - 13vh); 
-    background: rgb(251, 251, 251);
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in;
+        position: fixed;
+        top: 13vh;
+        right: 0;
+        width: 100vw;
+        height: calc(100vh - 13vh);
+        background: rgb(251, 251, 251);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
 
     }
 
@@ -290,18 +290,18 @@ nav {
     }
 
     #apoiador.texto {
-    text-align: center;
-    letter-spacing: 4px;
-    height: 30vh;
-    color: #f8f8f8;
-    background-color: #e57b12;
-}
+        text-align: center;
+        letter-spacing: 4px;
+        height: 30vh;
+        color: #f8f8f8;
+        background-color: #e57b12;
+    }
 
-#apoiador.texto h1{
-    margin-left: 5px;
-    text-align: left;
-    
-}
+    #apoiador.texto h1 {
+        margin-left: 5px;
+        text-align: left;
+
+    }
 
 }
 
@@ -432,6 +432,12 @@ main {
 .accordion-button:hover {
     background-color: #E57B12;
     color: white;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #0C96CF;
+    color: white;
+    box-shadow: none;
 }
 
 footer {
