@@ -164,6 +164,7 @@ nav {
 }
 
 .Drop:hover {
+
     color: #f28705 !important;
 }
 
@@ -408,7 +409,16 @@ main {
     transform: translateY(0);
 }
 
+.accordion-button {
+    background-color: #0C96CF;
+    color: white;
+    font-size: 25px;
+}
 
+.accordion-button:hover {
+    background-color: #E57B12;
+    color: white;
+}
 
 footer {
     background-color: #004ba8;
