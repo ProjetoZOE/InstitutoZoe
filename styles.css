@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    padding: 0;
+    padding: 0 !important;
     font-family: 'Inter Regular';
 }
 
@@ -40,6 +40,47 @@ a:hover {
     color: #f28705;
 
 }
+
+.texto p {
+    text-align: left;
+    max-width: 600px;
+    margin-left: 20px;
+    margin-right: auto;
+    color: #f28705;
+    font-size: 25px;
+    
+}
+
+.texto p a{
+    text-align: left;
+    max-width: 600px;
+    margin-left: 10px;
+    margin-right: auto;
+    color: #f28705;
+    font-size: 40px;
+    
+}
+
+.texto ul{
+    text-align: left;
+    max-width: 600px;
+    margin-left: 10px;
+    margin-right: auto;
+    color: #f28705;
+    font-size: 20px;
+    
+}
+
+.texto ul li{
+    text-align: left;
+    max-width: 600px;
+    margin-left: 30px;
+    margin-right: auto;
+    color: #0c96cf;
+    font-size: 20px;
+    
+}
+
 
 .logo img {
 
@@ -100,8 +141,7 @@ nav {
 }
 
 .Drop:hover {
-  
-  color: #f28705 !important;
+    color: #f28705 !important;
 }
 
 .dropdown-menu li {
