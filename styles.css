@@ -37,7 +37,6 @@ a {
 
 a:hover {
     scale: 1.1;
-
     color: #f28705;
 
 }
@@ -81,11 +80,29 @@ nav {
 
 }
 
-.nave-list button:hover {
+.nave-list li button:hover {
     color: #f28705;
 
 }
 
+.Drop {
+
+    letter-spacing: 3px;
+    padding: 0;
+    padding-bottom: 2px;
+    color: #004ba8 !important;
+    text-decoration: none !important;
+    font-weight: bold;
+    font-size: 18px;
+    border: 0 solid transparent;
+    transition: 0.5s;
+
+}
+
+.Drop:hover {
+  
+  color: #f28705 !important;
+}
 
 .dropdown-menu li {
     margin: 10px;
@@ -187,11 +204,11 @@ nav {
     }
 
     .barra {
-    border-radius: 10px;
-    border: 2px solid #004ba8;
-    width: 25vw;
-    height: 5vh;
-}
+        border-radius: 10px;
+        border: 2px solid #004ba8;
+        width: 25vw;
+        height: 5vh;
+    }
 
     .dropdown-menu li {
         margin: 15px;
