@@ -42,43 +42,66 @@ a:hover {
 }
 
 .texto p {
+    letter-spacing: 3px;
     text-align: left;
     max-width: 600px;
     margin-left: 20px;
     margin-right: auto;
     color: #f28705;
     font-size: 25px;
-    
+
 }
 
-.texto p a{
+.texto p a {
+    letter-spacing: 3px;
     text-align: left;
     max-width: 600px;
     margin-left: 10px;
     margin-right: auto;
     color: #f28705;
     font-size: 40px;
-    
+
 }
 
-.texto ul{
+.texto ul {
+    letter-spacing: 4px;
     text-align: left;
     max-width: 600px;
     margin-left: 10px;
     margin-right: auto;
     color: #f28705;
     font-size: 20px;
-    
+
 }
 
-.texto ul li{
+.texto ul li {
+    letter-spacing: 4px;
     text-align: left;
     max-width: 600px;
-    margin-left: 30px;
+    margin-left: 40px;
     margin-right: auto;
     color: #0c96cf;
-    font-size: 20px;
-    
+    font-size: 25px;
+
+}
+
+#apoiador.texto {
+    letter-spacing: 4px;
+    height: 30vh;
+    color: #f8f8f8;
+    background-color: #e57b12;
+}
+
+#apoiador.texto h1{
+    margin-left: 20px;
+}
+
+#apoiador.texto a{
+    justify-content: center;
+    text-align: center;
+    margin-left: 60px;
+    color: #f8f8f8;
+  
 }
 
 
@@ -255,7 +278,19 @@ nav {
 
     }
 
+    #apoiador.texto {
+    text-align: center;
+    letter-spacing: 4px;
+    height: 30vh;
+    color: #f8f8f8;
+    background-color: #e57b12;
+}
 
+#apoiador.texto h1{
+    margin-left: 5px;
+    text-align: left;
+    
+}
 
 }
 
