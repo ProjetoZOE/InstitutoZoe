@@ -60,6 +60,10 @@ nav {
 }
 
 
+body{
+    padding-top: 70px;
+}
+
 .nave-list {
 
     display: flex;
