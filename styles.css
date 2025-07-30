@@ -81,27 +81,33 @@ nav {
 
 }
 
-.nave-list button:hover{
-  color: #f28705;
-    
+.nave-list button:hover {
+    color: #f28705;
+
 }
 
 
-.dropdown-menu li {   
+.dropdown-menu li {
     margin: 10px;
 }
 
 
-.dropdown-menu a{
+.dropdown-menu a {
     color: #004ba8;
 }
 
-.dropdown-menu a:hover{
+.dropdown-menu a:hover {
     color: #f28705;
     background-color: transparent;
 }
 
 
+.barra {
+    border-radius: 10px;
+    border: 2px solid #004ba8;
+    width: 15vw;
+    height: 5vh;
+}
 
 
 
@@ -180,10 +186,17 @@ nav {
         z-index: 1000;
     }
 
-    .dropdown-menu li {   
-    margin: 15px;
-    
+    .barra {
+    border-radius: 10px;
+    border: 2px solid #004ba8;
+    width: 25vw;
+    height: 5vh;
 }
+
+    .dropdown-menu li {
+        margin: 15px;
+
+    }
 
 
 
