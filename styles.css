@@ -11,6 +11,7 @@ body {
 
 }
 
+
 body {
     display: flex;
     flex-direction: column;
@@ -442,11 +443,29 @@ main {
 
 footer {
     background-color: #004ba8;
-    color: rgb(251, 251, 251);
+    color: #ffffff;
     padding: 20px 0;
     border-top: 1px solid #ddd;
     flex-shrink: 0;
-    /* Evita que o footer encolha */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p {
+    margin-top: 10px;
+    text-align: center;
+}
+
+footer a {
+    color: #ffffff; /* Texto branco */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #f28705; /* Hover amarelo */
+    text-decoration: underline;
 }
 
 
