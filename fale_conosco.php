@@ -1,19 +1,19 @@
 <?php
-// Configurações de conexão com o banco de dados
+
 $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "instituto_zoe";
 
-// Criar conexão
+
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Verificar conexão
+
 if ($conn->connect_error) {
     die("Conexão falhou: " . $conn->connect_error);
 }
 
-// Processar o formulário de contato
+
 $sucesso = false;
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['nome'])) {
     $nome = $_POST['nome'];
@@ -21,19 +21,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['nome'])) {
     $mensagem = $_POST['mensagem'];
 
     if (!empty($nome) && !empty($email) && !empty($mensagem)) {
-        // Inserir no banco de dados
+        
         $sql = "INSERT INTO contatos (nome, email, mensagem) VALUES (?, ?, ?)";
         $stmt = $conn->prepare($sql);
         $stmt->bind_param("sss", $nome, $email, $mensagem);
         if ($stmt->execute()) {
             $sucesso = true;
 
-            // Enviar e-mail básico (opcional)
-            $to = "seuemail@example.com"; // Substitua pelo seu e-mail
+            
+            $to = "seuemail@example.com"; 
             $subject = "Nova mensagem de contato - Instituto Zoe";
             $body = "Nome: $nome\nE-mail: $email\nMensagem: $mensagem";
             $headers = "From: no-reply@institutozoe.com";
-            mail($to, $subject, $body, $headers); // Função mail() do PHP
+            mail($to, $subject, $body, $headers); 
         }
         $stmt->close();
     }
@@ -177,6 +177,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['nome'])) {
 </html>
 
 <?php
-// Fechar conexão
+
 $conn->close();
 ?>
