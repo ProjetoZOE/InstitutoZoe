@@ -1,43 +1,15 @@
 <?php
-// Configurações de conexão com o banco de dados
+
 $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "instituto_zoe";
 
-// Criar conexão
+
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Verificar conexão
-if ($conn->connect_error) {
-    die("Conexão falhou: " . $conn->connect_error);
-}
 
-// Processar o formulário de contato
-$sucesso = false;
-if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['nome'])) {
-    $nome = $_POST['nome'];
-    $email = $_POST['email'];
-    $mensagem = $_POST['mensagem'];
 
-    if (!empty($nome) && !empty($email) && !empty($mensagem)) {
-        // Inserir no banco de dados
-        $sql = "INSERT INTO contatos (nome, email, mensagem) VALUES (?, ?, ?)";
-        $stmt = $conn->prepare($sql);
-        $stmt->bind_param("sss", $nome, $email, $mensagem);
-        if ($stmt->execute()) {
-            $sucesso = true;
-
-            // Enviar e-mail básico (opcional)
-            $to = "seuemail@example.com"; // Substitua pelo seu e-mail
-            $subject = "Nova mensagem de contato - Instituto Zoe";
-            $body = "Nome: $nome\nE-mail: $email\nMensagem: $mensagem";
-            $headers = "From: no-reply@institutozoe.com";
-            mail($to, $subject, $body, $headers); // Função mail() do PHP
-        }
-        $stmt->close();
-    }
-}
 ?>
 
 <!DOCTYPE html>
@@ -60,18 +32,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['nome'])) {
         <nav>
             <a class="logo" href="index.html" style="display: flex;align-items: center;"> <img src="img/logo.png" alt="Logo Instituto Zoe"></a>
             <ul class="nave-list">
-                <li><a href="/">Campanhas</a></li>
+                <li><a href="index-camp.html">Campanhas</a></li>
                 <li>
                     <button class="Drop btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                         Serviços
                     </button>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Atividades</a></li>
-                        <li><a class="dropdown-item" href="#">Saúde</a></li>
+                        <li><a class="dropdown-item" href="index-ativ.html">Atividades</a></li>
+                        <li><a class="dropdown-item" href="index-saude.html">Saúde</a></li>
                     </ul>
                 </li>
-                <li><a href="/">Agendamento</a></li>
-                <li><a href="/">Seja Apoiador(a)</a></li>
+                <li><a href="index-agend.html">Agendamento</a></li>
+                <li><a href="index-apoiador.html">Seja Apoiador(a)</a></li>
             </ul>
             <form id="searchForm">
                 <input class="barra" type="text" id="searchInput" list="sugestoes" placeholder=" Pesquisar">
@@ -85,6 +57,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['nome'])) {
             </form>
             <div class="social-icons nave-list">
                 <a href="https://www.instagram.com/instituicao.zoe/" target="_blank"><i class="bi bi-instagram" style="font-size: 3vh;"></i></a>
+                <a href="https://www.tiktok.com/@elesabracam?_t=ZM-8yUYqBd8iqW&_r=1" target="_blank"><i class="bi bi-tiktok" style="font-size: 3vh;"></i></a>
                 <a href="https://www.youtube.com/channel/UC7ONgI1ulSOE8iYjwWE3Kww" target="_blank"><i class="bi bi-youtube" style="font-size: 4vh;"></i></a>
                 <a href="https://wa.me/5581973410768" target="_blank"><i class="bi bi-whatsapp" style="font-size: 3vh;"></i></a>
             </div>
@@ -97,25 +70,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['nome'])) {
     </header>
 
     <main style="display: flex; justify-content: center; align-items: center; min-height: 70vh;">
-        <section id="contato" class="texto" style="padding: 20px; max-width: 600px; margin-top: 80px;">
+        <section id="contato" class="texto" style="padding: 20px; max-width: 600px; margin-top: 120px; position: relative; z-index: 1;">
             <h1 style="color: #004ba8; font-size: 30px; text-align: center; margin-bottom: 20px;">Fale Conosco</h1>
             <?php if ($sucesso): ?>
                 <p style="color: green; text-align: center; margin-bottom: 20px;">Mensagem enviada com sucesso!</p>
             <?php endif; ?>
-            <form method="POST" action="" style="display: flex; flex-direction: column; gap: 15px; max-width: 600px; margin: 0 auto;">
+            <form method="POST" action="" style="display: flex; flex-direction: column; gap: 15px;">
                 <div>
-                    <label for="nome" style="color: #004ba8; font-weight: bold; margin-bottom: 5px; display: block;">Nome:</label>
+                    <label for="nome" style="color: #004ba8; font-weight: bold; margin-bottom: 10px; font-size: 18px;">Nome:</label>
                     <input type="text" id="nome" name="nome" required style="padding: 10px; border: 2px solid #004ba8; border-radius: 5px; font-size: 16px; width: 100%;">
                 </div>
                 <div>
-                    <label for="email" style="color: #004ba8; font-weight: bold; margin-bottom: 5px; display: block;">E-mail:</label>
+                    <label for="email" style="color: #004ba8; font-weight: bold; margin-bottom: 10px; font-size: 18px;">E-mail:</label>
                     <input type="email" id="email" name="email" required style="padding: 10px; border: 2px solid #004ba8; border-radius: 5px; font-size: 16px; width: 100%;">
                 </div>
                 <div>
-                    <label for="mensagem" style="color: #004ba8; font-weight: bold; margin-bottom: 5px; display: block;">Mensagem:</label>
-                    <textarea id="mensagem" name="mensagem" required style="padding: 10px; border: 2px solid #004ba8; border-radius: 5px; font-size: 16px; width: 100%; min-height: 100px; resize: vertical;"></textarea>
+                    <label for="mensagem" style="color: #004ba8; font-weight: bold; margin-bottom: 10px; font-size: 18px;">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" required style="padding: 15px; border: 2px solid #004ba8; border-radius: 5px; font-size: 16px; width: 100%; min-height: 200px; resize: vertical;"></textarea>
                 </div>
-                <button type="submit" style="background-color: #004ba8; color: #f8f8f8; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s; width: fit-content; align-self: center;">
+                <button type="submit" style="background-color: #004ba8; color: #f8f8f8; padding: 15px 30px; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s; width: 200px; align-self: center; text-align: center;">
                     Enviar
                 </button>
             </form>
@@ -126,7 +99,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['nome'])) {
         <div class="container p-4">
             <div class="row align-items-center text-center text-md-start">
                 <div class="col-md-4 mb-3 mb-md-0">
-                    <p class="mb-0">&copy; 2025 - Instituto Zoe - Todos os direitos reservados</p>
+                    <p class="mb-0">&copy; 2025 - Instituto Zoe - Todos os direitos reservados <br><br>
+                        Local: Rua Arezzo N°290 <br>
+                        Horário de funcionamento: 07:00 às 17:00 <br>(07:00 às 19:00 nas Quartas-feiras) <br><br>
+                        Telefone para contato: (81)97341-0768
+                    </p>
                 </div>
                 <div class="col-md-4 mb-3 mb-md-0 d-flex justify-content-center">
                     <a class="logo d-flex align-items-center gap-2 text-decoration-none" href="#">
@@ -135,6 +112,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['nome'])) {
                 </div>
                 <div class="col-md-4 mb-3 mb-md-0 d-flex justify-content-md-end justify-content-center gap-3">
                     <a href="https://www.instagram.com/instituicao.zoe/" target="_blank" class="text-decoration-none social-link"><i class="bi bi-instagram fs-4" style="color: rgb(251, 251, 251);"></i></a>
+                    <a href="https://www.tiktok.com/@elesabracam?_t=ZM-8yUYqBd8iqW&_r=1" target="_blank" class="text-decoration-none social-link"><i class="bi bi-tiktok fs-4" style="color: rgb(251, 251, 251);"></i></a>
                     <a href="https://www.youtube.com/channel/UC7ONgI1ulSOE8iYjwWE3Kww" target="_blank" class="text-decoration-none social-link"><i class="bi bi-youtube fs-4" style="color: rgb(251, 251, 251);"></i></a>
                     <a href="https://wa.me/5581973410768" target="_blank" class="text-decoration-none social-link"><i class="bi bi-whatsapp fs-4" style="color: rgb(251, 251, 251);"></i></a>
                 </div>
@@ -177,6 +155,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['nome'])) {
 </html>
 
 <?php
-// Fechar conexão
+
 $conn->close();
 ?>
