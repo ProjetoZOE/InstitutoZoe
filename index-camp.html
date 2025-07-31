@@ -12,6 +12,44 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+    <style>
+        .titulo-principal {
+            background-color: #04B2D9;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .titulo-principal h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .card-title {
+            color: #f28705;
+            font-weight: bold;
+        }
+
+        .btn-vermais {
+            background-color: #f28705;
+            color: white;
+            border: none;
+        }
+
+        .btn-vermais:hover {
+            background-color: #d76f04;
+        }
+
+        .card img {
+            height: 450px;
+            object-fit: cover;
+        }
+
+        .card {
+            min-height: 420px;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -88,6 +126,79 @@
     </header>
 
     <main>
+
+
+        <div class="titulo-principal">
+            <h1>Nossas Campanhas</h1>
+            <p class="lead">Projetos e eventos que transformam vidas com saúde, arte e empatia.</p>
+        </div>
+
+
+        <div class="container my-5">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-5"
+                style="gap: 8px !important; justify-content: space-around;">
+
+
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="https://source.unsplash.com/600x400/?health,clinic" class="card-img-top"
+                            alt="Mutirão da Saúde">
+                        <div class="card-body" style="text-align: center;">
+                            <h5 class="card-title">Mutirões da Saúde</h5>
+                            <p class="card-text">Consultas e exames gratuitos com profissionais voluntários, levando
+                                saúde onde é mais necessário.</p>
+                            <a href="#" class="btn btn-vermais mt-3">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="https://source.unsplash.com/600x400/?ballet,performance" class="card-img-top"
+                            alt="Espetáculo de Ballet">
+                        <div class="card-body" style="text-align: center;">
+                            <h5 class="card-title">Espetáculo de Ballet</h5>
+                            <p class="card-text">Apresentações artísticas com nossas crianças e adolescentes, promovendo
+                                inclusão por meio da dança.</p>
+                            <a href="#" class="btn btn-vermais mt-3">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="https://source.unsplash.com/600x400/?autism,awareness" class="card-img-top"
+                            alt="Autismo">
+                        <div class="card-body" style="text-align: center;">
+                            <h5 class="card-title">Conscientização do Autismo</h5>
+                            <p class="card-text">Campanhas de informação, palestras e oficinas para educar sobre o
+                                espectro autista e combater o preconceito.</p>
+                            <a href="#" class="btn btn-vermais mt-3">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="https://source.unsplash.com/600x400/?children,celebration" class="card-img-top"
+                            alt="Dia das Crianças">
+                        <div class="card-body" style="text-align: center;">
+                            <h5 class="card-title">Datas Comemorativas</h5>
+                            <p class="card-text">Eventos como Dia das Mães, Dia das Crianças e outras datas especiais
+                                para acolher e celebrar com amor.</p>
+                            <a href="#" class="btn btn-vermais mt-3">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
 
 
 
