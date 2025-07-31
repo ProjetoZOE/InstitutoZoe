@@ -64,6 +64,7 @@ a:hover {
 }
 
 .texto ul {
+    
     letter-spacing: 4px;
     text-align: left;
     max-width: 600px;
@@ -75,6 +76,7 @@ a:hover {
 }
 
 .texto ul li {
+    
     letter-spacing: 4px;
     text-align: left;
     max-width: 600px;
@@ -86,6 +88,7 @@ a:hover {
 }
 
 #apoiador.texto {
+    
     letter-spacing: 4px;
     height: 30vh;
     color: #f8f8f8;
@@ -93,10 +96,12 @@ a:hover {
 }
 
 #apoiador.texto h1{
+    
     margin-left: 20px;
 }
 
 #apoiador.texto a{
+    font-weight: bold;
     justify-content: center;
     text-align: center;
     margin-left: 30px;
