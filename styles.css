@@ -15,6 +15,7 @@ body {
 body {
     display: flex;
     flex-direction: column;
+
 }
 
 .texto {
@@ -374,6 +375,31 @@ main {
     border: none;
 }
 
+.card-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 150px;
+    background-color: #f3ece9;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+.card-home-title {
+    font-family: 'Inter Bold';
+    color: #E57B12;
+    font-size: 30px;
+}
+
+.card-home-text {
+    font-family: 'Inter Medium';
+    color: #000000;
+    font-size: 15px;
+}
+
 .video-container {
     position: relative;
     padding-bottom: 56.25%;
@@ -460,13 +486,15 @@ footer p {
 }
 
 footer a {
-    color: #ffffff; /* Texto branco */
+    color: #ffffff;
+    /* Texto branco */
     text-decoration: none;
     font-weight: bold;
 }
 
 footer a:hover {
-    color: #f28705; /* Hover amarelo */
+    color: #f28705;
+    /* Hover amarelo */
     text-decoration: underline;
 }
 
@@ -474,4 +502,14 @@ footer a:hover {
 @font-face {
     font-family: 'Inter Regular';
     src: url(assets/fonts/Inter-fontiko/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Inter Bold';
+    src: url(assets/fonts/Inter-fontiko/Inter-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Inter Medium';
+    src: url(assets/fonts/Inter-fontiko/Inter-Medium.ttf    );
 }
