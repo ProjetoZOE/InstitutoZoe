@@ -381,7 +381,7 @@ main {
     justify-content: center;
     align-items: center;
     min-height: 150px;
-    background-color: #f3ece9;
+    background-color: #ece7e4;
     border-radius: 10px;
     padding: 1rem;
     text-align: center;
@@ -391,12 +391,39 @@ main {
 .card-home-title {
     font-family: 'Inter Bold';
     color: #E57B12;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .card-home-text {
     font-family: 'Inter Medium';
     color: #000000;
+    font-size: 15px;
+}
+
+.section-title {
+    font-family: 'Inter Bold';
+    font-size: 35px;
+    text-align: center;
+    color: white;
+}
+
+.section-text {
+    font-family: 'Inter Regular';
+    font-size: 20px;
+    color: white;
+}
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-title {
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.card-text {
     font-size: 15px;
 }
 
