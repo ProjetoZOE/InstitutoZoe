@@ -26,9 +26,17 @@
 
         }
 
-        .row {
+        .servicos {
             margin: 0;
             gap: 3px;
+        }
+
+        .card {
+            transition: 0.6s;
+        }
+
+        .card:hover {
+            scale: 1.1;
         }
     </style>
 
@@ -117,13 +125,13 @@
 
 
         <div class="container my-5">
-            <div class="row gy-5" style="justify-content: space-around;">
+            <div class="servicos row gy-5" style="justify-content: space-around;">
 
                 <!-- Fisioterapia -->
-                 <div class="col-lg-5 col-md-6">
+                <div class="col-lg-5 col-md-6">
                     <div class="card shadow rounded-4 overflow-hidden h-100">
                         <img src="img/fisioterapia.jpg" class="w-100 card-img-uniform" alt="Fisioterapia">
-                        <div class="card-body bg-light">
+                        <div class="card-body bg-light p-3">
                             <h4 class="card-title text-primary">Fisioterapia</h4>
                             <p class="card-text">Atendimento especializado com foco em reabilitação, prevenção e
                                 bem-estar físico, promovendo autonomia e qualidade de vida.</p>
@@ -132,10 +140,10 @@
                 </div>
 
                 <!-- Funcional -->
-                 <div class="col-lg-5 col-md-6">
+                <div class="col-lg-5 col-md-6">
                     <div class="card shadow rounded-4 overflow-hidden h-100">
                         <img src="img/funcional.jpg" class="w-100 card-img-uniform" alt="Funcional">
-                        <div class="card-body bg-light">
+                        <div class="card-body bg-light p-3">
                             <h4 class="card-title text-primary">Funcional</h4>
                             <p class="card-text">Exercícios personalizados que desenvolvem força, equilíbrio e
                                 resistência, promovendo saúde integral.</p>
@@ -144,10 +152,10 @@
                 </div>
 
                 <!-- Hidroginástica -->
-                 <div class="col-lg-5 col-md-6">
+                <div class="col-lg-5 col-md-6">
                     <div class="card shadow rounded-4 overflow-hidden h-100">
                         <img src="img/hidro.jpg" class="w-100 card-img-uniform" alt="Hidroginástica">
-                        <div class="card-body bg-light">
+                        <div class="card-body bg-light p-3">
                             <h4 class="card-title text-primary">Hidroginástica</h4>
                             <p class="card-text">Atividade física realizada na água, excelente para mobilidade,
                                 relaxamento e fortalecimento muscular.</p>
@@ -156,10 +164,10 @@
                 </div>
 
                 <!-- Ballet -->
-                 <div class="col-lg-5 col-md-6">
+                <div class="col-lg-5 col-md-6">
                     <div class="card shadow rounded-4 overflow-hidden h-100">
                         <img src="img/ballet.png" class="w-100 card-img-uniform" alt="Ballet">
-                        <div class="card-body bg-light">
+                        <div class="card-body bg-light p-3">
                             <h4 class="card-title text-primary">Ballet</h4>
                             <p class="card-text">Aulas que estimulam coordenação motora, expressão corporal e disciplina
                                 com amor e inclusão.</p>
@@ -168,10 +176,10 @@
                 </div>
 
                 <!-- Jiu-Jitsu -->
-                 <div class="col-lg-5 col-md-6">
+                <div class="col-lg-5 col-md-6">
                     <div class="card shadow rounded-4 overflow-hidden h-100">
                         <img src="img/jiu-jitsu.png" class="w-100 card-img-uniform" alt="Jiu-Jitsu">
-                        <div class="card-body bg-light">
+                        <div class="card-body bg-light p-3">
                             <h4 class="card-title text-primary">Jiu-Jitsu</h4>
                             <p class="card-text">Arte marcial que trabalha o corpo e a mente, incentivando o
                                 autocontrole, respeito e autoestima.</p>
@@ -180,10 +188,10 @@
                 </div>
 
                 <!-- Natação -->
-                 <div class="col-lg-5 col-md-6">
+                <div class="col-lg-5 col-md-6">
                     <div class="card shadow rounded-4 overflow-hidden h-100">
                         <img src="img/natação.png" class="w-100 card-img-uniform" alt="Natação">
-                        <div class="card-body bg-light">
+                        <div class="card-body bg-light p-3">
                             <h4 class="card-title text-primary">Natação</h4>
                             <p class="card-text">Aulas adaptadas com foco em segurança, coordenação e superação de
                                 limites individuais.</p>
@@ -198,7 +206,7 @@
         <div class="text-center bg-primary text-white py-4 mt-5">
             <h4>Quer participar de uma atividade?</h4>
             <p><a href="index-agend.html" class="btn mt-2"
-                    style="background-color: #f28705; color: #f8f8f8;padding: 4px !important;">Agende sua avaliação</a>
+                    style="background-color: #f28705; color: #f8f8f8;padding: 6px !important;">Agende sua avaliação</a>
             </p>
         </div>
 

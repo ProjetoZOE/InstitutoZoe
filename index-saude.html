@@ -15,6 +15,29 @@
         .titulo-principal {
             margin-top: 13vh;
         }
+
+        .card-img-uniform {
+            height: 350px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            text-align: center;
+
+        }
+
+        .servicos {
+            margin: 0;
+            gap: 3px;
+        }
+
+        .card {
+            transition: 0.6s;
+        }
+
+        .card:hover {
+            scale: 1.1;
+        }
     </style>
 
 </head>
@@ -104,14 +127,13 @@
 
         <!-- Container com cards -->
         <div class="container my-5">
-            <div class="row gy-5">
+            <div class="servicos row gy-5" style="justify-content: space-around;">
 
-                <!-- Nutricionista -->
-                <div class="col-md-6">
+                <!-- Fisioterapia -->
+                <div class="col-lg-5 col-md-6">
                     <div class="card shadow rounded-4 overflow-hidden h-100">
-                        <img src="https://via.placeholder.com/800x400?text=Nutricionista" class="w-100"
-                            alt="Nutricionista">
-                        <div class="card-body bg-light">
+                        <img src="img/nutricionista.jpg" class="w-100 card-img-uniform" alt="Nutricionista">
+                        <div class="card-body bg-light p-3">
                             <h4 class="card-title text-primary">Nutricionista</h4>
                             <p class="card-text">Avaliação nutricional e orientação alimentar para promover saúde,
                                 energia e bem-estar.</p>
@@ -119,12 +141,11 @@
                     </div>
                 </div>
 
-                <!-- Ginecologista -->
-                <div class="col-md-6">
+                <!-- Funcional -->
+                <div class="col-lg-5 col-md-6">
                     <div class="card shadow rounded-4 overflow-hidden h-100">
-                        <img src="https://via.placeholder.com/800x400?text=Ginecologista" class="w-100"
-                            alt="Ginecologista">
-                        <div class="card-body bg-light">
+                        <img src="img/ginecologista.jpg" class="w-100 card-img-uniform" alt="Ginecologista">
+                        <div class="card-body bg-light p-3">
                             <h4 class="card-title text-primary">Ginecologista</h4>
                             <p class="card-text">Cuidado com a saúde da mulher em todas as fases da vida, com
                                 acolhimento e respeito.</p>
@@ -132,12 +153,11 @@
                     </div>
                 </div>
 
-                <!-- Neurologista -->
-                <div class="col-md-6">
+                <!-- Hidroginástica -->
+                <div class="col-lg-5 col-md-6">
                     <div class="card shadow rounded-4 overflow-hidden h-100">
-                        <img src="https://via.placeholder.com/800x400?text=Neurologista" class="w-100"
-                            alt="Neurologista">
-                        <div class="card-body bg-light">
+                        <img src="img/neurologista.jpg" class="w-100 card-img-uniform" alt="Neurologista">
+                        <div class="card-body bg-light p-3">
                             <h4 class="card-title text-primary">Neurologista</h4>
                             <p class="card-text">Diagnóstico e tratamento de distúrbios do sistema nervoso, com atenção
                                 especializada.</p>
@@ -145,12 +165,11 @@
                     </div>
                 </div>
 
-                <!-- Neuropediatra -->
-                <div class="col-md-6">
+                <!-- Ballet -->
+                <div class="col-lg-5 col-md-6">
                     <div class="card shadow rounded-4 overflow-hidden h-100">
-                        <img src="https://via.placeholder.com/800x400?text=Neuropediatra" class="w-100"
-                            alt="Neuropediatra">
-                        <div class="card-body bg-light">
+                        <img src="img/neuropediatra.jpg" class="w-100 card-img-uniform" alt="Neuropediatra">
+                        <div class="card-body bg-light p-3">
                             <h4 class="card-title text-primary">Neuropediatra</h4>
                             <p class="card-text">Acompanhamento do desenvolvimento neurológico infantil com foco em
                                 intervenções precoces.</p>
@@ -158,11 +177,11 @@
                     </div>
                 </div>
 
-                <!-- Psiquiatra -->
-                <div class="col-md-6">
+                <!-- Jiu-Jitsu -->
+                <div class="col-lg-5 col-md-6">
                     <div class="card shadow rounded-4 overflow-hidden h-100">
-                        <img src="https://via.placeholder.com/800x400?text=Psiquiatra" class="w-100" alt="Psiquiatra">
-                        <div class="card-body bg-light">
+                        <img src="img/Psiquiatra.jpg" class="w-100 card-img-uniform" alt="Psiquiatra">
+                        <div class="card-body bg-light p-3">
                             <h4 class="card-title text-primary">Psiquiatra</h4>
                             <p class="card-text">Atenção à saúde mental com empatia e responsabilidade, promovendo
                                 equilíbrio emocional.</p>
@@ -170,12 +189,11 @@
                     </div>
                 </div>
 
-                <!-- Fonoaudiologia -->
-                <div class="col-md-6">
+                <!-- Natação -->
+                <div class="col-lg-5 col-md-6">
                     <div class="card shadow rounded-4 overflow-hidden h-100">
-                        <img src="https://via.placeholder.com/800x400?text=Fonoaudiologia" class="w-100"
-                            alt="Fonoaudiologia">
-                        <div class="card-body bg-light">
+                        <img src="img/Fonoaudiologia.jpg" class="w-100 card-img-uniform" alt="Fonoaudiologia">
+                        <div class="card-body bg-light p-3">
                             <h4 class="card-title text-primary">Fonoaudiologia</h4>
                             <p class="card-text">Apoio ao desenvolvimento da comunicação, linguagem e funções orais com
                                 técnicas modernas.</p>
@@ -183,12 +201,11 @@
                     </div>
                 </div>
 
-                <!-- Musicoterapia -->
-                <div class="col-md-6">
+
+                <div class="col-lg-5 col-md-6">
                     <div class="card shadow rounded-4 overflow-hidden h-100">
-                        <img src="https://via.placeholder.com/800x400?text=Musicoterapia" class="w-100"
-                            alt="Musicoterapia">
-                        <div class="card-body bg-light">
+                        <img src="img/Musicoterapia.jpg" class="w-100 card-img-uniform" alt="Musicoterapia">
+                        <div class="card-body bg-light p-3">
                             <h4 class="card-title text-primary">Musicoterapia</h4>
                             <p class="card-text">Terapia por meio da música que estimula a expressão, comunicação e
                                 bem-estar emocional.</p>
@@ -196,12 +213,12 @@
                     </div>
                 </div>
 
-                <!-- Massoterapia -->
-                <div class="col-md-6">
+
+
+                <div class="col-lg-5 col-md-6">
                     <div class="card shadow rounded-4 overflow-hidden h-100">
-                        <img src="https://via.placeholder.com/800x400?text=Massoterapia" class="w-100"
-                            alt="Massoterapia">
-                        <div class="card-body bg-light">
+                        <img src="img/Massoterapia.jpg" class="w-100 card-img-uniform" alt="Massoterapia">
+                        <div class="card-body bg-light p-3">
                             <h4 class="card-title text-primary">Massoterapia</h4>
                             <p class="card-text">Técnicas de massagem para alívio de dores, relaxamento muscular e
                                 qualidade de vida.</p>
@@ -209,12 +226,10 @@
                     </div>
                 </div>
 
-                <!-- Psicopedagógico -->
-                <div class="col-md-6">
+                <div class="col-lg-5 col-md-6">
                     <div class="card shadow rounded-4 overflow-hidden h-100">
-                        <img src="https://via.placeholder.com/800x400?text=Psicopedagogia" class="w-100"
-                            alt="Psicopedagogia">
-                        <div class="card-body bg-light">
+                        <img src="img/Psicopedagogia.jpg" class="w-100 card-img-uniform" alt="Psicopedagogia">
+                        <div class="card-body bg-light p-3">
                             <h4 class="card-title text-primary">Psicopedagogia</h4>
                             <p class="card-text">Apoio ao processo de aprendizagem e superação de dificuldades escolares
                                 e cognitivas.</p>
@@ -222,12 +237,11 @@
                     </div>
                 </div>
 
-                <!-- Neuropsicopedagogia -->
-                <div class="col-md-6">
+
+                <div class="col-lg-5 col-md-6">
                     <div class="card shadow rounded-4 overflow-hidden h-100">
-                        <img src="https://via.placeholder.com/800x400?text=Neuropsicopedagogia" class="w-100"
-                            alt="Neuropsicopedagogia">
-                        <div class="card-body bg-light">
+                        <img src="img/Neuropsicopedagogia.jpg" class="w-100 card-img-uniform" alt="Neuropsicopedagogia">
+                        <div class="card-body bg-light p-3">
                             <h4 class="card-title text-primary">Neuropsicopedagogia</h4>
                             <p class="card-text">Integração entre neurologia, psicologia e pedagogia para compreender e
                                 desenvolver o potencial de cada indivíduo.</p>
@@ -235,11 +249,11 @@
                     </div>
                 </div>
 
-                <!-- Psicólogo -->
-                <div class="col-md-6">
+
+                <div class="col-lg-5 col-md-6">
                     <div class="card shadow rounded-4 overflow-hidden h-100">
-                        <img src="https://via.placeholder.com/800x400?text=Psicólogo" class="w-100" alt="Psicólogo">
-                        <div class="card-body bg-light">
+                        <img src="img/Psicólogo.jpg" class="w-100 card-img-uniform" alt="Psicólogo">
+                        <div class="card-body bg-light p-3">
                             <h4 class="card-title text-primary">Psicólogo</h4>
                             <p class="card-text">Acompanhamento psicológico com acolhimento e escuta ativa para promoção
                                 da saúde emocional.</p>
@@ -247,12 +261,11 @@
                     </div>
                 </div>
 
-                <!-- Terapias em ABA -->
-                <div class="col-md-6">
+
+                <div class="col-lg-5 col-md-6">
                     <div class="card shadow rounded-4 overflow-hidden h-100">
-                        <img src="https://via.placeholder.com/800x400?text=Terapias+em+ABA" class="w-100"
-                            alt="Terapias em ABA">
-                        <div class="card-body bg-light">
+                        <img src="img/Terapias em ABA.jpg" class="w-100 card-img-uniform" alt="Terapias em ABA">
+                        <div class="card-body bg-light p-3">
                             <h4 class="card-title text-primary">Terapias em ABA</h4>
                             <p class="card-text">Aplicação da Análise do Comportamento para desenvolver habilidades
                                 sociais e cognitivas, especialmente no TEA.</p>
@@ -260,12 +273,11 @@
                     </div>
                 </div>
 
-                <!-- Psicomotricidade -->
-                <div class="col-md-6">
+
+                <div class="col-lg-5 col-md-6">
                     <div class="card shadow rounded-4 overflow-hidden h-100">
-                        <img src="https://via.placeholder.com/800x400?text=Psicomotricidade" class="w-100"
-                            alt="Psicomotricidade">
-                        <div class="card-body bg-light">
+                        <img src="img/Psicomotricidade.jpg" class="w-100 card-img-uniform" alt="Psicomotricidade">
+                        <div class="card-body bg-light p-3">
                             <h4 class="card-title text-primary">Psicomotricidade</h4>
                             <p class="card-text">Trabalho corporal que estimula o desenvolvimento motor, emocional e
                                 cognitivo.</p>
@@ -273,13 +285,16 @@
                     </div>
                 </div>
 
+
             </div>
         </div>
 
         <!-- Rodapé com CTA -->
         <div class="text-center bg-primary text-white py-4 mt-5">
             <h4>Precisa de atendimento?</h4>
-            <p><a href="index-agend.html" class="btn mt-2" style="background-color: #f28705; color: #f8f8f8;padding: 4px !important;">Agende sua consulta</a></p>
+            <p><a href="index-agend.html" class="btn mt-2"
+                    style="background-color: #f28705; color: #f8f8f8;padding: 6px !important;">Agende sua consulta</a>
+            </p>
         </div>
 
 
