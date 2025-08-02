@@ -344,7 +344,7 @@ nav {
 
 
 main {
-    background-color: #F9F0E9;
+    background-color: #ffffff;
     padding: 20px;
     flex: 1 0 auto;
     padding-top: 13vh;
@@ -381,7 +381,7 @@ main {
     justify-content: center;
     align-items: center;
     min-height: 150px;
-    background-color: #ece7e4;
+    background-color: #F8F8F8;
     border-radius: 10px;
     padding: 1rem;
     text-align: center;
@@ -407,6 +407,18 @@ main {
     color: white;
 }
 
+.section-subtitle {
+    font-family: 'Inter Medium';
+    font-size: 20px;
+    color: #252525;
+}
+
+.section-subtext {
+    font-family: 'Inter Regular';
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+}
+
 .section-text {
     font-family: 'Inter Regular';
     font-size: 20px;
@@ -426,6 +438,22 @@ main {
 .card-text {
     font-size: 15px;
 }
+
+.icon-container {
+    width: 50px;
+    height: 75px;
+    background-color: #f28705;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkmark {
+    color: white;
+    font-size: 2rem;
+}
+
 
 .video-container {
     position: relative;
