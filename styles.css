@@ -87,28 +87,30 @@ a:hover {
 
 }
 
-#apoiador.texto {
+#apoiador {
+    text-align: center;
     letter-spacing: 4px;
     height: 30vh;
     color: #f8f8f8;
     background-color: #e57b12;
+
 }
 
-#apoiador.texto h1 {
-    margin-left: 20px;
-}
 
-#apoiador.texto a {
-    justify-content: center;
+
+#apoiador p a{
     text-align: center;
-    margin-left: 30px;
-    color: #f8f8f8;
+    color: #0c96cf;
     transition: 0.5s;
+    font-size: 35px;
+    background-color: #f8f8f8;
+    border-radius: 15px;
+    padding: 15px !important;
 
 }
 
-#apoiador.texto a:hover {
-    color: #004ba8;
+#apoiador a:hover {
+   
     font-size: 42px;
 
 }
