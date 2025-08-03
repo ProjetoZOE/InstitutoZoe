@@ -1,7 +1,7 @@
 * {
     margin: 0;
-    padding: 0 !important;
     font-family: 'Inter Regular';
+    box-sizing: border-box;
 }
 
 html,
