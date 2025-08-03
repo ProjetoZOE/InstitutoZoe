@@ -88,28 +88,27 @@ a:hover {
 
 #apoiador {
     text-align: center;
-    letter-spacing: 4px;
-    height: 30vh;
     color: #f8f8f8;
-    background-color: #e57b12;
-
+    background-color: #004ba8;
+    justify-content: center;
 }
 
 
 
-#apoiador p a {
+#apoiador a {
     text-align: center;
-    color: #0c96cf;
+    justify-content: center;
+    color: #004ba8;
     transition: 0.5s;
-    font-size: 35px;
+    font-size: 20px;
     background-color: #f8f8f8;
-    border-radius: 15px;
+    border-radius: 50px;
     padding: 15px !important;
 }
 
 #apoiador a:hover {
 
-    font-size: 42px;
+    font-size: 22px;
 
 }
 
