@@ -7,7 +7,6 @@
 html,
 body {
     height: 100%;
-
 }
 
 
@@ -33,7 +32,7 @@ a {
     color: #004ba8;
     text-decoration: none;
     transition: 0.5s;
-
+    font-size: 16px;
 }
 
 a:hover {
@@ -522,6 +521,12 @@ main {
     background-color: #0C96CF;
     color: white;
     box-shadow: none;
+}
+
+.accordion-body {
+    background-color: #F8F8F8;
+    color: #252525;
+    font-size: 18px;
 }
 
 footer {
