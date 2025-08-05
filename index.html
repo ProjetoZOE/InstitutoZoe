@@ -23,6 +23,13 @@
             background-color: rgb(243, 243, 243);
             scale: 1.1;
         }
+        .servicos{
+            transition: 0.6s;
+        }
+
+        .servicos:hover {
+            scale: 1.1;
+        }
     </style>
 
 
@@ -51,7 +58,7 @@
                         style="font-size: 16px;">
                         Serviços
                     </button>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu" style="align-items: center;">
                         <li><a class="dropdown-item" href="index-ativ.html" style="font-size: 16px;">Atividades</a></li>
                         <li><a class="dropdown-item" href="index-saude.html" style="font-size: 16px;">Saúde</a>
                         </li>
@@ -123,7 +130,7 @@
                 <div class="row justify-content-center align-items-center g-4">
                     <div class="col-12 col-md-6 d-flex justify-content-center order-1">
                         <img src="img/EquipeZoe.jpg" alt="Equipe do Instituto Zoe" class="img-fluid"
-                            style="border: none; border-radius: 5px; max-width: 100%; height: auto; box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);">
+                            style="border: none; border-radius: 5px; max-width: 100%; height: auto; box-shadow: 6px 5px 10px rgba(0, 0, 0, 0.2);">
                     </div>
 
                     <div class="col-12 col-md-6 order-2">
@@ -210,7 +217,7 @@
                     acessível,
                     com qualidade para o maior número de mães e crianças possíveis.</p>
                 <div class="row justify-content-center align-items-center g-2 d-flex gap-3 m-5">
-                    <div class="col d-flex justify-content-center align-items-center">
+                    <div class="servicos col d-flex justify-content-center align-items-center">
                         <div class="card" style="width: 25rem;" data-aos="zoom-in" data-aos-duration="900ms">
                             <img src="img/saúde.png" class="card-img-top" alt="Atividades">
                             <div class="card-body p-3">
@@ -222,7 +229,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col d-flex justify-content-center justify-content-center align-items-center">
+                    <div class="servicos col d-flex justify-content-center justify-content-center align-items-center">
                         <div class="card" style="width: 25rem;" data-aos="zoom-in" data-aos-duration="900ms">
                             <img src="img/atividade.png" class="card-img-top" alt="Saúde">
                             <div class="card-body p-3">
@@ -262,13 +269,13 @@
 
 
 
-        <section id="video-institucional" style="padding: 40px 0; background-color: #f9f0e9;">
+        <section id="video-institucional" style="padding: 40px 0; background-color: #f9f0e9; ">
             <div class="container text-center">
                 <h2 class="section-title" style="color: #333333;">Assista ao nosso vídeo institucional</h2>
                 <div class="ratio ratio-16x9 mt-4">
                     <iframe src="https://www.youtube.com/embed/8B02_B1vb4M" title="Instituto Zoe"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen style="border: none;">
+                        allowfullscreen style="border: none; box-shadow: 6px 5px 10px rgba(0, 0, 0, 0.2); border-radius: 10px;">
                     </iframe>
                 </div>
             </div>
@@ -288,7 +295,7 @@
 
         <section id="faq" class="container py-5">
             <p class="section-title mb-5" style="color: #004ba8;">Perguntas Frequentes</p>
-            <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion" id="accordionPanelsStayOpenExample" style="box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); border-radius: 10px;">
                 <div class=" accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed p-4" type="button" data-bs-toggle="collapse"
@@ -410,6 +417,7 @@
                 </div>
             </div>
         </section>
+        <br>
 
 
 
