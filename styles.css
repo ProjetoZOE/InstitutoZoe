@@ -161,6 +161,7 @@ nav {
 
 .dropdown-menu a {
     color: #004ba8;
+    font-size: 20px !important;
 }
 
 .dropdown-menu a:hover {
@@ -249,8 +250,9 @@ nav {
         height: 5vh;
     }
 
-    .dropdown-menu li {
-        margin: 15px;
+     .dropdown-menu li {
+        margin: 15px 0;
+        text-align: center;
     }
 
     #apoiador.texto {
@@ -266,34 +268,24 @@ nav {
         text-align: left;
     }
 
-    /* INÍCIO Ajustes dropdown para mobile */
-    /* Remova display: block !important */
+   
     .dropdown-menu {
         position: static !important;
         display: none;
-        
-        /* esconde por padrão */
         background-color: white !important;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         z-index: 9999;
         width: 100%;
-        padding: 10px 20px 10px 20px;
+        padding: 15px 25px 15px 25px;
         border-top: 1px solid rgba(0, 0, 0, 0.05);
 
     }
 
-    .dropdown-menu.show {
-       
+    .dropdown-menu.show {      
         display: block;
 
-        /* aparece quando a classe 'show' for adicionada */
     }
 
-
-    .dropdown-menu li {
-        margin: 10px 0;
-        text-align: center;
-    }
 
     .dropdown-toggle::after {
         display: none;
