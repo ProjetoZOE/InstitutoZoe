@@ -79,18 +79,6 @@
 
             </ul>
 
-            <form id="searchForm">
-                <input class="barra" type="text" id="searchInput" list="sugestoes" placeholder=" Pesquisar">
-                <datalist id="sugestoes">
-                    <option value="Quem somos">
-                    <option value="O que fazemos">
-                    <option value="Para quem fazemos">
-                    <option value="Como pode ajudar">
-                </datalist>
-                <button type="submit" class="botao"><i class="bi bi-search" style="color: #004ba8; "></i></button>
-            </form>
-
-
 
 
             <div class="social-icons nave-list">
@@ -365,29 +353,6 @@
     <script src="mobile-navbar.js"></script>
 
 
-    <script>
-        document.getElementById("searchForm").addEventListener("submit", function (e) {
-            e.preventDefault();
-
-            const input = document.getElementById("searchInput").value.trim().toLowerCase();
-            const palavrasChave = {
-                "quem somos": "quem somos",
-                "o que fazemos": "o que fazemos",
-                "para quem fazemos": "para quem fazemos",
-                "como pode ajudar": "como pode ajudar"
-            };
-
-            const destino = palavrasChave[input];
-            if (destino) {
-                const elemento = document.getElementById(destino);
-                if (elemento) {
-                    elemento.scrollIntoView({ behavior: "smooth" });
-                }
-            } else {
-                alert("AVISO: PALAVRA-CHAVE NÃO ENCONTRADA.");
-            }
-        });
-    </script>
 
 </body>
 
