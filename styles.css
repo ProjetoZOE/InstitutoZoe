@@ -503,6 +503,12 @@ main {
     box-shadow: none;
 }
 
+.accordion-body {
+    background-color: #F8F8F8;
+    color: #252525;
+    font-size: 18px;
+}
+
 footer {
     background-color: #004ba8;
     color: #ffffff;
