@@ -6,9 +6,15 @@ $password = "";
 $dbname = "instituto_zoe";
 
 
+$sucesso = false;
+
+
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 
+if ($conn->connect_error) {
+    die("Conexão falhou: " . $conn->connect_error);
+}
 
 ?>
 
@@ -29,48 +35,44 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 
 <body>
     <header>
-        <nav>
-            <a class="logo" href="index.html" style="display: flex;align-items: center;"> <img src="img/logo.png" alt="Logo Instituto Zoe"></a>
-            <ul class="nave-list">
-                <li><a href="index-camp.html">Campanhas</a></li>
-                <li>
-                    <button class="Drop btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                        Serviços
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="index-ativ.html">Atividades</a></li>
-                        <li><a class="dropdown-item" href="index-saude.html">Saúde</a></li>
-                    </ul>
-                </li>
-                <li><a href="index-agend.html">Agendamento</a></li>
-                <li><a href="index-apoiador.html">Seja Apoiador(a)</a></li>
+     <nav>
+    <a class="logo" href="index.html" style="display: flex;align-items: center;">
+        <img src="img/logo.png" alt="Logo Instituto Zoe">
+    </a>
+
+    <ul class="nave-list">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="index-camp.html">Campanhas</a></li>
+        <li>
+            <button class="Drop btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 16px;">
+                Serviços
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="index-ativ.html" style="font-size: 16px;">Atividades</a></li>
+                <li><a class="dropdown-item" href="index-saude.html" style="font-size: 16px;">Saúde</a></li>
             </ul>
-            <form id="searchForm">
-                <input class="barra" type="text" id="searchInput" list="sugestoes" placeholder=" Pesquisar">
-                <datalist id="sugestoes">
-                    <option value="Quem somos">
-                    <option value="O que fazemos">
-                    <option value="Para quem fazemos">
-                    <option value="Como pode ajudar">
-                </datalist>
-                <button type="submit" class="botao"><i class="bi bi-search" style="color: #004ba8;"></i></button>
-            </form>
-            <div class="social-icons nave-list">
-                <a href="https://www.instagram.com/instituicao.zoe/" target="_blank"><i class="bi bi-instagram" style="font-size: 3vh;"></i></a>
-                <a href="https://www.tiktok.com/@elesabracam?_t=ZM-8yUYqBd8iqW&_r=1" target="_blank"><i class="bi bi-tiktok" style="font-size: 3vh;"></i></a>
-                <a href="https://www.youtube.com/channel/UC7ONgI1ulSOE8iYjwWE3Kww" target="_blank"><i class="bi bi-youtube" style="font-size: 4vh;"></i></a>
-                <a href="https://wa.me/5581973410768" target="_blank"><i class="bi bi-whatsapp" style="font-size: 3vh;"></i></a>
-            </div>
-            <div class="mobile-menu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-        </nav>
+        </li>
+        <li><a href="index-agend.html">Agendamento</a></li>
+        <li><a href="index-apoiador.html">Seja Apoiador(a)</a></li>
+    </ul>
+
+    <div class="social-icons nave-list">
+        <a href="https://www.instagram.com/instituicao.zoe/" target="_blank"><i class="bi bi-instagram" style="font-size: 3vh;"></i></a>
+        <a href="https://www.tiktok.com/@elesabracam?_t=ZM-8yUYqBd8iqW&_r=1" target="_blank"><i class="bi bi-tiktok" style="font-size: 3vh;"></i></a>
+        <a href="https://www.youtube.com/channel/UC7ONgI1ulSOE8iYjwWE3Kww" target="_blank"><i class="bi bi-youtube" style="font-size: 4vh;"></i></a>
+        <a href="https://wa.me/5581973410768" target="_blank"><i class="bi bi-whatsapp" style="font-size: 3vh;"></i></a>
+    </div>
+
+    <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+</nav>
     </header>
 
     <main style="display: flex; justify-content: center; align-items: center; min-height: 70vh;">
-        <section id="contato" class="texto" style="padding: 20px; max-width: 600px; margin-top: 120px; position: relative; z-index: 1;">
+        <section id="contatos" class="texto" style="padding: 20px; max-width: 600px; margin-top: 120px; position: relative; z-index: 1;">
             <h1 style="color: #004ba8; font-size: 30px; text-align: center; margin-bottom: 20px;">Fale Conosco</h1>
             <?php if ($sucesso): ?>
                 <p style="color: green; text-align: center; margin-bottom: 20px;">Mensagem enviada com sucesso!</p>
