@@ -1,19 +1,19 @@
-# Instituto Zoe - Desenvolvimento do Website
+# Instituto Zoe - Website
 
-Bem-vindo ao repositório oficial do Instituto Zoe, dedicado ao registro e desenvolvimento do website institucional.
+Bem-vindo ao repositório oficial do Instituto Zoe, dedicado ao desenvolvimento e manutenção do website institucional.
 
 ## Sobre o Instituto Zoe
 
-O Instituto Zoe é uma organização comprometida com [breve descrição da missão/área de atuação do instituto]. Nosso objetivo é criar um impacto positivo por meio de [ações, projetos ou valores principais].
+O Instituto Zoe é uma organização comprometida em promover saúde, inclusão e desenvolvimento social para crianças, adolescentes e famílias em situação de vulnerabilidade. Atuamos com projetos, campanhas e serviços que transformam vidas por meio de atendimento multiprofissional, atividades esportivas, culturais e ações de conscientização.
 
 ## Objetivo deste Repositório
 
-Este repositório tem como finalidade registrar todo o processo de criação do website do Instituto Zoe, desde o planejamento até a entrega final. Aqui você encontrará:
+Este repositório tem como finalidade registrar todo o processo de criação e evolução do website do Instituto Zoe, incluindo:
 
 - Documentação das etapas do projeto;
 - Planejamento e estruturação do site;
 - Design e protótipos;
-- Desenvolvimento front-end e back-end;
+- Desenvolvimento front-end;
 - Implementação de funcionalidades;
 - Testes e ajustes;
 - Deploy e manutenção.
@@ -25,9 +25,26 @@ Este repositório tem como finalidade registrar todo o processo de criação do 
 - `/src` — Código-fonte do website;
 - `/tests` — Testes realizados durante o desenvolvimento.
 
+Os principais arquivos do site estão na raiz do projeto, incluindo:
+- `index.html` — Página inicial
+- `index-camp.html` — Campanhas
+- `index-ativ.html` — Atividades
+- `index-saude.html` — Serviços de Saúde
+- `styles.css` — Estilos globais
+- `mobile-navbar.js` — Script do menu mobile
+
+## Como rodar o projeto
+
+1. Clone este repositório:
+   ```
+   git clone https://github.com/seuusuario/instituto-zoe.git
+   ```
+2. Abra a pasta no VS Code ou outro editor de sua preferência.
+3. Abra o arquivo `index.html` em seu navegador.
+
 ## Contato
 
-Para dúvidas ou sugestões, entre em contato com a equipe do Instituto Zoe pelo email: equipezoe7@gmail.com
+Para dúvidas ou sugestões, entre em contato com a equipe do Instituto Zoe pelo e-mail: equipezoe7@gmail.com
 
 ---
 
