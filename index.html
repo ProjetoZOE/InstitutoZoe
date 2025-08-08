@@ -39,6 +39,14 @@
         .apoie:hover {
             scale: 1.2;
         }
+
+        #mascote_pensativo {
+            transition: 0.6s;
+        }
+
+        #mascote_pensativo:hover {
+            scale: 1.1;
+        }
     </style>
 
 
@@ -307,16 +315,18 @@
 
         <div style="display: flex; align-items: flex-start; gap: 20px;" id="mascote-faq">
 
-           
-            <img src="img/Mascote-pensativo.png" alt="Mascote pensativo" class="d-none d-lg-block"
-                style="max-height: 60vh; height: auto;">
 
-           
-            <section id="faq" class="container py-5" style="flex: 1;">
-                <div class="accordion" id="accordionPanelsStayOpenExample" style="border-radius: 10px;">
-                    <p class="section-title mb-5" style="color: #004ba8;">
+            <img src="img/Mascote-pensativo.png" alt="Mascote pensativo" class="d-none d-lg-block"
+                data-aos="zoom-in-right" id="mascote_pensativo" style="max-height: 60vh; height: auto;">
+
+
+            <section id="faq" class="container py-5" >
+                <p class="section-title mb-5" style="color: #004ba8;">
                         <u>Perguntas Frequentes</u>
                     </p>
+
+                <div class="accordion" id="accordionPanelsStayOpenExample" style="border-radius: 10px; box-shadow: 6px 5px 10px rgba(0, 0, 0, 0.2);">
+                    
 
                     <div class="accordion-item" data-aos="flip-right" data-aos-delay="0">
                         <h2 class="accordion-header">
