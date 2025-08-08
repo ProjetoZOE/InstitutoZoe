@@ -250,11 +250,12 @@ nav {
         height: 5vh;
     }
 
-     .dropdown-menu li {
+    .dropdown-menu li {
         margin: 15px 0;
         text-align: center;
     }
 
+    
     #apoiador.texto {
         text-align: center;
         letter-spacing: 4px;
@@ -268,7 +269,7 @@ nav {
         text-align: left;
     }
 
-   
+
     .dropdown-menu {
         position: static !important;
         display: none;
@@ -281,7 +282,7 @@ nav {
 
     }
 
-    .dropdown-menu.show {      
+    .dropdown-menu.show {
         display: block;
 
     }
