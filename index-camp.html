@@ -8,6 +8,7 @@
     <title>Instituto Zoe</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,15 +43,8 @@
         .card img {
             object-fit: cover;
         }
-        
-        .card {
-            transition: 0.6s;
-        }
 
-        .card:hover {
-            scale: 1.1;
-            border: 5px solid #ff991d;
-        }
+        
     </style>
 
 </head>
@@ -131,7 +125,7 @@
 
 
                 <div class="col">
-                    <div class="card h-100 shadow border-0 rounded-4">
+                    <div class="card h-100 shadow border-0 rounded-4" data-aos="fade-right" data-aos-delay="0">
 
                         <!-- Carrossel -->
                         <div id="carousel-ballet" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -174,7 +168,7 @@
 
 
                 <div class="col">
-                    <div class="card h-100 shadow border-0 rounded-4">
+                    <div class="card h-100 shadow border-0 rounded-4" data-aos="fade-left" data-aos-delay="150">
 
                         <!-- Carrossel -->
                         <div id="carousel-mutirao" class="carousel slide" data-bs-ride="carousel">
@@ -200,7 +194,7 @@
 
 
                 <div class="col">
-                    <div class="card h-100 shadow border-0 rounded-4">
+                    <div class="card h-100 shadow border-0 rounded-4" data-aos="fade-right" data-aos-delay="0">
 
                         <!-- Carrossel -->
                         <div id="carousel-autismo" class="carousel slide" data-bs-ride="carousel">
@@ -225,7 +219,7 @@
 
 
                 <div class="col">
-                    <div class="card h-100 shadow border-0 rounded-4">
+                    <div class="card h-100 shadow border-0 rounded-4" data-aos="fade-left" data-aos-delay="150">
 
                         <!-- Carrossel -->
                         <div id="carousel-datas" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -271,15 +265,6 @@
                 </div>
             </div>
         </div>
-
-
-
-
-
-
-
-
-
 
 
 
@@ -339,6 +324,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 
     <script src="mobile-navbar.js"></script>
