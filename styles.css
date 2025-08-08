@@ -255,7 +255,7 @@ nav {
         text-align: center;
     }
 
-    
+
     #apoiador.texto {
         text-align: center;
         letter-spacing: 4px;
@@ -506,6 +506,11 @@ main {
     background-color: #F8F8F8;
     color: #252525;
     font-size: 18px;
+}
+
+.text-primary {
+    font-family: 'Inter Regular';
+    color: #004ba8 !important;
 }
 
 footer {
