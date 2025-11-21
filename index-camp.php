@@ -51,7 +51,7 @@
 
 <body>
     <header>
-        <?php include 'menu.php'; ?>
+        <?php include 'incluir/menu.php'; ?>
     </header>
     <main style="padding: 0; overflow-x: hidden;">
 
@@ -215,7 +215,7 @@
     </main>
 
 
-    <?php include 'footer.php'; ?>
+    <?php include 'incluir/footer.php'; ?>
 
 
 

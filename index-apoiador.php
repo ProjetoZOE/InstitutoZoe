@@ -17,7 +17,7 @@
 <body>
 
     <header>
-        <?php include 'menu.php'; ?>
+        <?php include 'incluir/menu.php'; ?>
     </header>
     <main style="padding: 0; overflow-x: hidden;">
 
@@ -34,7 +34,7 @@
     </main>
 
 
-    <?php include 'footer.php'; ?>
+    <?php include 'incluir/footer.php'; ?>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"

@@ -35,7 +35,7 @@ if ($conn->connect_error) {
 
 <body>
     <header>
-        <?php include 'menu.php'; ?>
+        <?php include 'incluir/menu.php'; ?>
     </header>
 
     <main style="display: flex; justify-content: center; align-items: center; min-height: 70vh;">
@@ -64,7 +64,7 @@ if ($conn->connect_error) {
         </section>
     </main>
 
-    <?php include 'footer.php'; ?>
+    <?php include 'incluir/footer.php'; ?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
     <script src="mobile-navbar.js"></script>
