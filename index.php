@@ -80,8 +80,6 @@
     ?>
 
     <main style="padding: 0; overflow-x: hidden;">
-
-
         <section class="banner-container">
             <img src="img/instituto-zoe.svg" class="banner-img" alt="Banner do Instituto Zoe" data-aos="fade-down"
                 data-aos-easing="linear" data-aos-duration="1100">
@@ -184,8 +182,6 @@
             </div>
         </section>
 
-
-
         <section class=" py-5" style="background-color: #E57B12;">
             <div class="container">
                 <p class="section-title">Nossos Serviços</p>
@@ -196,8 +192,6 @@
                     forma
                     acessível,
                     com qualidade para o maior número de mães e crianças possíveis.</p>
-
-
                 <div class="row justify-content-center align-items-center g-2 d-flex gap-3 m-5">
 
                     <div class="servicos col d-flex justify-content-center align-items-center">
@@ -230,10 +224,7 @@
             </div>
 
         </section>
-
         <br><br>
-
-
         <section class="d-flex align-items-center py-1" style="min-height: 50vh;" id="apoiador">
             <div class="container text-center m-3">
                 <p class="section-title">Apoie o Instituto Zoe</p>
@@ -254,8 +245,6 @@
             </div>
         </section>
 
-
-
         <section id="video-institucional" style="padding: 40px 0; background-color: #f9f0e9; ">
             <div class="container text-center">
                 <h2 class="section-title" style="color: #333333;">Assista ao nosso vídeo institucional</h2>
@@ -269,34 +258,17 @@
                 </div>
             </div>
         </section>
-
-
         <br><br>
-
-
-
-
-
-
         </section>
-
-
         <div style="display: flex; align-items: flex-start; gap: 20px;" id="mascote-faq">
-
-
             <img src="img/Mascote-pensativo.png" alt="Mascote pensativo" class="d-none d-lg-block"
                 data-aos="zoom-in-right" id="mascote_pensativo" style="max-height: 60vh; height: auto;">
-
-
             <section id="faq" class="container py-5">
                 <p class="section-title mb-5" style="color: #004ba8;">
                     <u>Perguntas Frequentes</u>
                 </p>
-
                 <div class="accordion" id="accordionPanelsStayOpenExample"
                     style="border-radius: 10px; box-shadow: 6px 5px 10px rgba(0, 0, 0, 0.2);">
-
-
                     <div class="accordion-item" data-aos="flip-right" data-aos-delay="0">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed p-4" type="button" data-bs-toggle="collapse"
@@ -348,7 +320,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="accordion-item" data-aos="flip-right" data-aos-delay="200">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed p-4" type="button" data-bs-toggle="collapse"
@@ -373,7 +344,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="accordion-item" data-aos="flip-right" data-aos-delay="300">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed p-4" type="button" data-bs-toggle="collapse"
@@ -400,7 +370,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="accordion-item" data-aos="flip-right" data-aos-delay="400">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed p-4" type="button" data-bs-toggle="collapse"
@@ -421,15 +390,10 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </section>
             <br>
-
         </div>
-
-
-
     </main>
 
     <?php include 'incluir/footer.php'; ?>
@@ -444,7 +408,6 @@
     </script>
 
     <script src="mobile-navbar.js"></script>
-
 
 
 
