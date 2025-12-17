@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo-Icone.png" type="image/x-icon">
+    <title>Instituto Zoe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        .col-md {
+            transition: 0.3s;
+            background-color: rgb(248, 248, 248);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .col-md:hover {
+            background-color: rgb(243, 243, 243);
+            scale: 1.1;
+        }
+
+        .servicos {
+            transition: 0.6s;
+        }
+
+        .servicos:hover {
+            scale: 1.1;
+        }
+
+        .apoie {
+            transition: 0.6s;
+        }
+
+        .apoie:hover {
+            scale: 1.2;
+        }
+
+        #mascote_pensativo {
+            transition: 0.6s;
+        }
+
+        #mascote_pensativo:hover {
+            scale: 1.1;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <header>
+        <?php include 'incluir/menu.php'; ?>
+    </header>
+    <?php
+        /*
+         * ============================
+         *  MENU DE NAVEGAÇÃO (NAVBAR)
+         * ============================
+         * 
+         * Este arquivo contém o código da barra de navegação principal do site.
+         * Ele é incluído em todas as páginas via:
+         *    <?php include 'includes/nave.php'; ?>
+         * 
+         *  Instruções para a equipe:
+         * - Para adicionar ou remover itens do menu, edite as tags <li> e <a>.
+         * - Caso precise alterar links internos (como "Sobre"), lembre-se:
+         *   • Na index.php pode usar "#sobre"
+         *   • Em outras páginas, utilize "index.php#sobre"
+         * - Para alterar ícones sociais, edite as tags <a> dentro da div .social-icons.
+         * 
+         *  Boa prática:
+         * Sempre faça um commit antes de modificar este arquivo para manter histórico de mudanças.
+         * 
+         */
+    ?>
+
+    <main style="padding: 0; overflow-x: hidden;">
+
+
+        <section class="banner-container">
+            <img src="img/instituto-zoe.svg" class="banner-img" alt="Banner do Instituto Zoe" data-aos="fade-down"
+                data-aos-easing="linear" data-aos-duration="1100">
+        </section>
+
+        <section>
+            <div class="container text-center">
+                <div class="row m-5 gap-5">
+                    <div class="col-md card-home" data-aos="flip-up" data-aos-delay="0">
+                        <p class="card-home-title">4+</p>
+                        <p class="card-home-text">Anos de História</p>
+                    </div>
+                    <div class="col-md card-home" data-aos="flip-up" data-aos-delay="150">
+                        <p class="card-home-title">50+</p>
+                        <p class="card-home-text">Crianças Acompanhadas</p>
+                    </div>
+                    <div class="col-md card-home" data-aos="flip-up" data-aos-delay="300">
+                        <p class="card-home-title">20+</p>
+                        <p class="card-home-text">Serviços Ofertados</p>
+                    </div>
+                    <div class="col-md card-home" data-aos="flip-up" data-aos-delay="450">
+                        <p class="card-home-title">5+</p>
+                        <p class="card-home-text">Programas</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5" style="background-color: #F8F8F8;" id="sobre">
+            <div class="container">
+                <div class="row justify-content-center align-items-center g-4">
+                    <div class="col-12 col-md-6 d-flex justify-content-center order-1">
+                        <img src="img/EquipeZoe.jpg" alt="Equipe do Instituto Zoe" class="img-fluid"
+                            style="border: none; border-radius: 5px; max-width: 100%; height: auto; box-shadow: 6px 5px 10px rgba(0, 0, 0, 0.2);">
+                    </div>
+
+                    <div class="col-12 col-md-6 order-2">
+                        <p class="section-title text-md-start text-center"
+                            style="color: #333333; text-align: center !important;">Sobre o Instituto Zoe
+                        </p>
+                        <p class="section-text text-md-start text-center" style="color: black;">
+                            Fundada em 2021, o Instituto Zoe se dedica a preencher lacunas na área da saúde em
+                            comunidades carentes.
+                            Nossa missão é fornecer serviços de saúde acessíveis e de qualidade, independentemente da
+                            condição socioeconômica.
+                        </p>
+                        <p class="section-text mb-4 text-md-start text-center" style="color: black;">
+                            Acreditamos que todos merecem acesso a cuidados de saúde que sejam:
+                        </p>
+
+                        <div class="mb-4">
+                            <div class="row align-items-start g-2 mb-2" data-aos="fade-left" data-aos-delay="0">
+                                <div class="col-auto">
+                                    <div class="icon-container me-2">
+                                        <i class="checkmark" style="padding-right: 6px;">✓</i>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <p class="section-subtitle mb-1">Acessíveis</p>
+                                    <p class="section-subtext mb-0">
+                                        Removendo barreiras aos cuidados de saúde por meio de clínicas móveis e taxas
+                                        variáveis.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="row align-items-start g-2 mb-2" data-aos="fade-left" data-aos-delay="150">
+                                <div class="col-auto">
+                                    <div class="icon-container me-2" style="background-color: #004ba8;">
+                                        <i class="checkmark" style="padding-right: 6px;">✓</i>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <p class="section-subtitle mb-1">Empáticos</p>
+                                    <p class="section-subtext mb-0">
+                                        Respeitando as diversas origens e prestando cuidados que reconheçam as
+                                        necessidades culturais.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="row align-items-start g-2 mb-4" data-aos="fade-left" data-aos-delay="300">
+                                <div class="col-auto">
+                                    <div class="icon-container me-2">
+                                        <i class="checkmark" style="padding-right: 6px;">✓</i>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <p class="section-subtitle mb-1">Impactantes</p>
+                                    <p class="section-subtext mb-0">
+                                        Envolver-se com as comunidades locais para desenvolver programas que atendam às
+                                        suas necessidades específicas.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+
+
+        <section class=" py-5" style="background-color: #E57B12;">
+            <div class="container">
+                <p class="section-title">Nossos Serviços</p>
+                <p class="section-text" style="text-align: center;">
+                    Oferecemos serviços de saúde física, mental e
+                    atividades
+                    sociais/lazer de
+                    forma
+                    acessível,
+                    com qualidade para o maior número de mães e crianças possíveis.</p>
+
+
+                <div class="row justify-content-center align-items-center g-2 d-flex gap-3 m-5">
+
+                    <div class="servicos col d-flex justify-content-center align-items-center">
+                        <div class="card" style="width: 25rem;" data-aos="zoom-in" data-aos-duration="900ms">
+                            <img src="img/atividade.png" class="card-img-top" alt="Atividades">
+                            <div class="card-body p-3">
+                                <h5 class="card-title">Atividades</h5>
+                                <p class="card-text">Atividades realizadas pelo
+                                    Instituto Zoe</p>
+                                <a href="index-ativ.html" class="btn text-primary">Saiba
+                                    mais <img src="img/right-arrow-icon.png" alt="arrow-right"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="servicos col d-flex justify-content-center justify-content-center align-items-center">
+                        <div class="card" style="width: 25rem;" data-aos="zoom-in" data-aos-duration="900ms"
+                            data-aos-delay="150">
+                            <img src="img/saúde.png" class="card-img-top" alt="Saúde">
+                            <div class="card-body p-3">
+                                <h5 class=" card-title">Saúde</h5>
+                                <p class="card-text">Serviços de Saúde realizados pelo
+                                    Instituto Zoe</p>
+                                <a href="index-saude.html" class="btn text-primary">Saiba mais <img
+                                        src="img/right-arrow-icon.png" alt="arrow-right"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <br><br>
+
+
+        <section class="d-flex align-items-center py-1" style="min-height: 50vh;" id="apoiador">
+            <div class="container text-center m-3">
+                <p class="section-title">Apoie o Instituto Zoe</p>
+                <p class="section-text mb-5">
+                    Contribua com seu tempo, habilidades ou recursos, seu apoio nos ajuda a ampliar nosso alcance
+                    e impacto nas comunidades que mais precisam.
+                </p>
+                <div class="row justify-content-center g-5">
+                    <div class="col-12 col-md-4" data-aos="zoom-out">
+                        <a href="index-apoiador.html" class="apoie btn btn-light w-100"
+                            style="box-shadow: 6px 5px 10px rgba(0, 0, 0, 0.2);">Doe aqui!</a>
+                    </div>
+                    <div class="col-12 col-md-4" data-aos="zoom-out" data-aos-delay="150">
+                        <a href="index-apoiador.html" class="btn btn-light w-100"
+                            style="box-shadow: 6px 5px 10px rgba(0, 0, 0, 0.2);">Voluntarie-se!</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="video-institucional" style="padding: 40px 0; background-color: #f9f0e9; ">
+            <div class="container text-center">
+                <h2 class="section-title" style="color: #333333;">Assista ao nosso vídeo institucional</h2>
+                <div class="ratio ratio-16x9 mt-4" data-aos="fade-down" data-aos-easing="linear"
+                    data-aos-duration="400">
+                    <iframe src="https://www.youtube.com/embed/8B02_B1vb4M" title="Instituto Zoe"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                        style="border: none; box-shadow: 6px 5px 10px rgba(0, 0, 0, 0.2); border-radius: 10px;">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+
+        <br><br>
+
+
+
+
+
+
+        </section>
+
+
+        <div style="display: flex; align-items: flex-start; gap: 20px;" id="mascote-faq">
+
+
+            <img src="img/Mascote-pensativo.png" alt="Mascote pensativo" class="d-none d-lg-block"
+                data-aos="zoom-in-right" id="mascote_pensativo" style="max-height: 60vh; height: auto;">
+
+
+            <section id="faq" class="container py-5">
+                <p class="section-title mb-5" style="color: #004ba8;">
+                    <u>Perguntas Frequentes</u>
+                </p>
+
+                <div class="accordion" id="accordionPanelsStayOpenExample"
+                    style="border-radius: 10px; box-shadow: 6px 5px 10px rgba(0, 0, 0, 0.2);">
+
+
+                    <div class="accordion-item" data-aos="flip-right" data-aos-delay="0">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed p-4" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseThree">
+                                O Instituto Zoe é pra mim?
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                            <div class="accordion-body p-3">
+                                Nosso público-alvo é composto principalmente por <strong>moradores da comunidade
+                                    local</strong>, especialmente
+                                <strong>pessoas em situação de vulnerabilidade social</strong>. Isso inclui
+                                <strong>famílias de baixa renda</strong>, <strong>idosos</strong>,
+                                <strong>crianças</strong>,
+                                <strong>gestantes</strong>, <strong>pessoas com doenças crônicas</strong> e
+                                <strong>indivíduos com acesso limitado</strong> aos serviços de saúde convencionais. A
+                                instituição foca na
+                                <strong>promoção da saúde</strong>, <strong>prevenção de doenças</strong> e
+                                <strong>atendimento básico</strong>, buscando garantir
+                                <strong>cuidado integral</strong>, <strong>humanizado</strong> e <strong>acessível a
+                                    todos</strong>.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item" data-aos="flip-right" data-aos-delay="100">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed p-4" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseOne">
+                                Quais profissionais podem ajudar meu filho?
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                            <div class="accordion-body p-3">
+                                <p>
+                                    O <strong>Instituto Zoe</strong> possui diversos <strong>profissionais de
+                                        saúde</strong>
+                                    para ajudar seu filho. Nossa equipe conta com:
+                                    <strong>Psicopedagogo</strong>, <strong>Neuropsicopedagogo</strong>,
+                                    <strong>Neuropediatra</strong>, <strong>Neurologista</strong>,
+                                    <strong>Psicólogo</strong>, <strong>Terapeuta ABA</strong>,
+                                    <strong>Musicoterapeuta</strong>, <strong>Psicomotricista</strong>,
+                                    <strong>Psiquiatra</strong>, <strong>Fonoaudiólogo</strong>,
+                                    <strong>Ginecologista</strong>, <strong>Fisioterapeutas</strong>,
+                                    <strong>Massoterapeuta</strong> e <strong>Nutricionista</strong>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item" data-aos="flip-right" data-aos-delay="200">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed p-4" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseTwo">
+                                Como posso estimular meu filho?
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body p-3">
+                                <p>
+                                    Além dos <strong>profissionais de saúde</strong> e de <strong>cuidado</strong> do
+                                    <strong>Instituto Zoe</strong>, é essencial que você estimule seu filho através de
+                                    <strong>atividades oferecidas</strong> pelo Instituto. Além de
+                                    <strong>entretenimento</strong>, seu filho irá desenvolver <strong>habilidades
+                                        motoras</strong>, <strong>socioemocionais</strong> e
+                                    <strong>intelectuais</strong>. O <strong>Instituto Zoe</strong> oferece
+                                    <strong>atividades físicas e esportivas</strong> como: <strong>Ballet</strong>,
+                                    <strong>Jiu-Jitsu</strong>, <strong>Natação</strong> e
+                                    <strong>Hidroginástica</strong>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item" data-aos="flip-right" data-aos-delay="300">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed p-4" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseFour">
+                                Por quem é dado o laudo? Neurologista ou Psicólogo?
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                            <div class="accordion-body p-3">
+                                <p>
+                                    O <strong>tratamento do autismo</strong> varia conforme as <strong>necessidades de
+                                        cada
+                                        pessoa</strong>. Não há <strong>cura</strong>, mas sim foco em promover
+                                    <strong>autonomia</strong> e <strong>qualidade de vida</strong>.
+                                    A duração depende da <strong>idade de início</strong>, <strong>nível de
+                                        suporte</strong>
+                                    e <strong>regularidade das terapias</strong>. Muitas crianças são acompanhadas por
+                                    <strong>anos</strong>, com <strong>ajustes ao longo do tempo</strong>.
+                                    Nossa <strong>ONG</strong> está aqui para <strong>orientar</strong>,
+                                    <strong>apoiar</strong> e <strong>promover inclusão</strong> durante todo esse
+                                    processo.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item" data-aos="flip-right" data-aos-delay="400">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed p-4" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseFive">
+                                Quanto tempo meu filho vai passar fazendo o tratamento?
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+                            <div class="accordion-body p-3">
+                                O tratamento do autismo varia conforme as necessidades de cada pessoa. Não há cura, mas
+                                sim foco em promover autonomia e qualidade de vida. A duração depende da idade de
+                                início,
+                                nível de suporte e regularidade das terapias. Muitas crianças são acompanhadas por anos,
+                                com
+                                ajustes ao longo do tempo. Nossa ONG está aqui para orientar, apoiar e promover inclusão
+                                durante todo esse processo.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <br>
+
+        </div>
+
+
+
+    </main>
+
+    <?php include 'incluir/footer.php'; ?>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="mobile-navbar.js"></script>
+
+
+
+
+</body>
+
+</html>
