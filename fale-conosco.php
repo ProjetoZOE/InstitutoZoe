@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -17,12 +16,11 @@
 
 <body>
     <header>
-        <?php include 'incluir/menu.php'; ?>
+        <?php include 'incluir/header.php'; ?>
     </header>
 
     <main style="display: flex; justify-content: center; align-items: center; min-height: 70vh;">
-        <section id="contatos" class="texto" 
-            style="
+        <section id="contatos" class="texto" style="
                 padding: 20px; 
                 max-width: 600px; 
                 margin-top: 90px; 
@@ -32,28 +30,33 @@
                 border-radius: 10px;
                 
             ">
-            
+
             <h1 style="color: #004ba8; font-size: 30px; text-align: center; margin-bottom: 20px;">Fale Conosco</h1>
 
             <form method="POST" action="" style="display: flex; flex-direction: column; gap: 15px;">
-                 <div>
-                    <label for="nome" style="color: #004ba8; font-weight: bold; margin-bottom: 10px; font-size: 18px;">Nome:</label>
-                    <input type="text" id="nome" name="nome" required 
+                <div>
+                    <label for="nome"
+                        style="color: #004ba8; font-weight: bold; margin-bottom: 10px; font-size: 18px;">Nome:</label>
+                    <input type="text" id="nome" name="nome" required
                         style="padding: 10px; border: 2px solid #004ba8; border-radius: 5px; font-size: 16px; width: 100%;">
                 </div>
 
                 <div>
-                    <label for="assunto" style="color: #004ba8; font-weight: bold; margin-bottom: 10px; font-size: 18px;">Assunto:</label>
-                    <input type="text" id="assunto" name="assunto" required 
+                    <label for="assunto"
+                        style="color: #004ba8; font-weight: bold; margin-bottom: 10px; font-size: 18px;">Assunto:</label>
+                    <input type="text" id="assunto" name="assunto" required
                         style="padding: 10px; border: 2px solid #004ba8; border-radius: 5px; font-size: 16px; width: 100%;">
                 </div>
 
                 <div>
-                    <label for="mensagem" style="color: #004ba8; font-weight: bold; margin-bottom: 10px; font-size: 18px;">Mensagem:</label>
-                    <textarea id="mensagem" name="mensagem" required style="padding: 15px; border: 2px solid #004ba8; border-radius: 5px; font-size: 16px; width: 100%; min-height: 200px; resize: vertical;"></textarea>
+                    <label for="mensagem"
+                        style="color: #004ba8; font-weight: bold; margin-bottom: 10px; font-size: 18px;">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" required
+                        style="padding: 15px; border: 2px solid #004ba8; border-radius: 5px; font-size: 16px; width: 100%; min-height: 200px; resize: vertical;"></textarea>
                 </div>
 
-                <button type="submit" style="background-color: #004ba8; color: #f8f8f8; padding: 15px 30px; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s; width: 200px; align-self: center; text-align: center;">
+                <button type="submit"
+                    style="background-color: #004ba8; color: #f8f8f8; padding: 15px 30px; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s; width: 200px; align-self: center; text-align: center;">
                     Enviar
                 </button>
             </form>
@@ -61,7 +64,10 @@
     </main>
     <?php include 'incluir/footer.php'; ?>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
     <script src="mobile-navbar.js"></script>
 </body>
+
 </html>

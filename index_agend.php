@@ -20,6 +20,7 @@
             z-index: 1000;
             background-color: #fff;
         }
+
         main {
             padding: 0;
             overflow-x: hidden;
@@ -29,16 +30,19 @@
             align-items: center;
             margin-top: 80px;
         }
+
         .login-section {
             padding: 40px 0;
             background-color: #f8f9fa;
             width: 100%;
             text-align: center;
         }
+
         .login-form {
             max-width: 400px;
             margin: 0 auto;
         }
+
         .form-input {
             margin: 10px 0;
             padding: 8px;
@@ -47,6 +51,7 @@
             width: 100%;
             font-size: 16px;
         }
+
         .form-button {
             background-color: #004ba8;
             color: #fff;
@@ -57,9 +62,11 @@
             cursor: pointer;
             transition: background-color 0.3s;
         }
+
         .form-button:hover {
             background-color: #003580;
         }
+
         .tab-button {
             background: none;
             border: none;
@@ -68,10 +75,12 @@
             margin: 0 10px;
             cursor: pointer;
         }
+
         .tab-button.active {
             font-weight: bold;
             text-decoration: underline;
         }
+
         .error-message {
             color: #dc3545;
             font-size: 14px;
@@ -83,52 +92,60 @@
 
 <body>
     <header>
-        <?php include 'incluir/menu.php'; ?>
+        <?php include 'incluir/header.php'; ?>
     </header>
-    
+
     <main>
         <section class="login-section">
             <div class="container">
-                <h1 class="text-center" style="color: #004ba8; font-size: 32px; margin-bottom: 20px;">Acesse ou Cadastre-se</h1>
-                <p class="text-center" style="color: #333; font-size: 18px; margin-bottom: 20px;">Gerencie sua conta Instituto Zoe.</p>
+                <h1 class="text-center" style="color: #004ba8; font-size: 32px; margin-bottom: 20px;">Acesse ou
+                    Cadastre-se</h1>
+                <p class="text-center" style="color: #333; font-size: 18px; margin-bottom: 20px;">Gerencie sua conta
+                    Instituto Zoe.</p>
 
                 <div class="mb-4">
                     <button class="tab-button active" onclick="showTab('login')">Login</button>
                     <button class="tab-button" onclick="showTab('cadastro')">Cadastro</button>
                 </div>
 
-                
+
                 <div id="login-form" class="login-form">
                     <form>
                         <div class="mb-3">
-                            <label for="login-email" class="form-label" style="color: #004ba8; font-weight: bold;">E-mail:</label>
+                            <label for="login-email" class="form-label"
+                                style="color: #004ba8; font-weight: bold;">E-mail:</label>
                             <input type="email" class="form-input" id="login-email" required>
                         </div>
                         <div class="mb-3">
-                            <label for="login-password" class="form-label" style="color: #004ba8; font-weight: bold;">Senha:</label>
+                            <label for="login-password" class="form-label"
+                                style="color: #004ba8; font-weight: bold;">Senha:</label>
                             <input type="password" class="form-input" id="login-password" required>
                         </div>
                         <button type="submit" class="form-button">Entrar</button>
                     </form>
                 </div>
 
-               
+
                 <div id="cadastro-form" class="login-form" style="display: none;">
                     <form id="cadastro-form-submit">
                         <div class="mb-3">
-                            <label for="cadastro-nome" class="form-label" style="color: #004ba8; font-weight: bold;">Nome:</label>
+                            <label for="cadastro-nome" class="form-label"
+                                style="color: #004ba8; font-weight: bold;">Nome:</label>
                             <input type="text" class="form-input" id="cadastro-nome" required>
                         </div>
                         <div class="mb-3">
-                            <label for="cadastro-email" class="form-label" style="color: #004ba8; font-weight: bold;">E-mail:</label>
+                            <label for="cadastro-email" class="form-label"
+                                style="color: #004ba8; font-weight: bold;">E-mail:</label>
                             <input type="email" class="form-input" id="cadastro-email" required>
                         </div>
                         <div class="mb-3">
-                            <label for="cadastro-password" class="form-label" style="color: #004ba8; font-weight: bold;">Senha:</label>
+                            <label for="cadastro-password" class="form-label"
+                                style="color: #004ba8; font-weight: bold;">Senha:</label>
                             <input type="password" class="form-input" id="cadastro-password" required>
                         </div>
                         <div class="mb-3">
-                            <label for="cadastro-confirm-password" class="form-label" style="color: #004ba8; font-weight: bold;">Confirmação de Senha:</label>
+                            <label for="cadastro-confirm-password" class="form-label"
+                                style="color: #004ba8; font-weight: bold;">Confirmação de Senha:</label>
                             <input type="password" class="form-input" id="cadastro-confirm-password" required>
                             <div id="password-error" class="error-message">As senhas não coincidem.</div>
                         </div>
@@ -146,7 +163,7 @@
         crossorigin="anonymous"></script>
     <script src="mobile-navbar.js"></script>
     <script>
-       
+
         function showTab(tab) {
             if (tab === 'login') {
                 document.getElementById('login-form').style.display = 'block';
@@ -161,9 +178,9 @@
             }
         }
 
-       
-        document.getElementById('cadastro-form-submit').addEventListener('submit', function(event) {
-            event.preventDefault(); 
+
+        document.getElementById('cadastro-form-submit').addEventListener('submit', function (event) {
+            event.preventDefault();
             const password = document.getElementById('cadastro-password').value;
             const confirmPassword = document.getElementById('cadastro-confirm-password').value;
             const errorMessage = document.getElementById('password-error');
@@ -175,13 +192,13 @@
                 errorMessage.style.display = 'none';
                 document.getElementById('cadastro-button').disabled = false;
                 alert('Cadastro enviado com sucesso! (Simulação)');
-                
+
                 this.reset();
             }
         });
 
-       
-        document.getElementById('cadastro-confirm-password').addEventListener('input', function() {
+
+        document.getElementById('cadastro-confirm-password').addEventListener('input', function () {
             const password = document.getElementById('cadastro-password').value;
             const confirmPassword = this.value;
             const errorMessage = document.getElementById('password-error');

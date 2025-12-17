@@ -54,30 +54,29 @@
 
 <body>
 
-    <header>
-        <?php include 'incluir/menu.php'; ?>
-    </header>
+    <?php include 'incluir/header.php'; ?>
+
     <?php
-        /*
-         * ============================
-         *  MENU DE NAVEGAÇÃO (NAVBAR)
-         * ============================
-         * 
-         * Este arquivo contém o código da barra de navegação principal do site.
-         * Ele é incluído em todas as páginas via:
-         *    <?php include 'includes/nave.php'; ?>
-         * 
-         *  Instruções para a equipe:
-         * - Para adicionar ou remover itens do menu, edite as tags <li> e <a>.
-         * - Caso precise alterar links internos (como "Sobre"), lembre-se:
-         *   • Na index.php pode usar "#sobre"
-         *   • Em outras páginas, utilize "index.php#sobre"
-         * - Para alterar ícones sociais, edite as tags <a> dentro da div .social-icons.
-         * 
-         *  Boa prática:
-         * Sempre faça um commit antes de modificar este arquivo para manter histórico de mudanças.
-         * 
-         */
+    /*
+     * ============================
+     *  MENU DE NAVEGAÇÃO (NAVBAR)
+     * ============================
+     * 
+     * Este arquivo contém o código da barra de navegação principal do site.
+     * Ele é incluído em todas as páginas via:
+     *    <?php include 'includes/nave.php'; ?>
+     * 
+     *  Instruções para a equipe:
+     * - Para adicionar ou remover itens do menu, edite as tags <li> e <a>.
+     * - Caso precise alterar links internos (como "Sobre"), lembre-se:
+     *   • Na index.php pode usar "#sobre"
+     *   • Em outras páginas, utilize "index.php#sobre"
+     * - Para alterar ícones sociais, edite as tags <a> dentro da div .social-icons.
+     * 
+     *  Boa prática:
+     * Sempre faça um commit antes de modificar este arquivo para manter histórico de mudanças.
+     * 
+     */
     ?>
 
     <main style="padding: 0; overflow-x: hidden;">
