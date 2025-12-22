@@ -1,15 +1,27 @@
+<?php
+// Inicia a sessão
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+
+// Processa logout se solicitado
+if (isset($_GET['logout'])) {
+    require_once 'config/auth.php';
+    destruirSessao();
+}
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/logo-Icone.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/images/logo-Icone.png" type="image/x-icon">
     <title>Instituto Zoe</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <style>
@@ -55,7 +67,7 @@
 <body>
 
     <header>
-        <?php include 'incluir/menu.php'; ?>
+        <?php include 'includes/navbar.php'; ?>
     </header>
     <?php
         /*
@@ -84,7 +96,7 @@
 
 
         <section class="banner-container">
-            <img src="img/instituto-zoe.svg" class="banner-img" alt="Banner do Instituto Zoe" data-aos="fade-down"
+            <img src="assets/images/instituto-zoe.svg" class="banner-img" alt="Banner do Instituto Zoe" data-aos="fade-down"
                 data-aos-easing="linear" data-aos-duration="1100">
         </section>
 
@@ -115,7 +127,7 @@
             <div class="container">
                 <div class="row justify-content-center align-items-center g-4">
                     <div class="col-12 col-md-6 d-flex justify-content-center order-1">
-                        <img src="img/EquipeZoe.jpg" alt="Equipe do Instituto Zoe" class="img-fluid"
+                        <img src="assets/images/EquipeZoe.jpg" alt="Equipe do Instituto Zoe" class="img-fluid"
                             style="border: none; border-radius: 5px; max-width: 100%; height: auto; box-shadow: 6px 5px 10px rgba(0, 0, 0, 0.2);">
                     </div>
 
@@ -203,13 +215,13 @@
 
                     <div class="servicos col d-flex justify-content-center align-items-center">
                         <div class="card" style="width: 25rem;" data-aos="zoom-in" data-aos-duration="900ms">
-                            <img src="img/atividade.png" class="card-img-top" alt="Atividades">
+                            <img src="assets/images/atividade.png" class="card-img-top" alt="Atividades">
                             <div class="card-body p-3">
                                 <h5 class="card-title">Atividades</h5>
                                 <p class="card-text">Atividades realizadas pelo
                                     Instituto Zoe</p>
                                 <a href="index-ativ.html" class="btn text-primary">Saiba
-                                    mais <img src="img/right-arrow-icon.png" alt="arrow-right"></a>
+                                    mais <img src="assets/images/right-arrow-icon.png" alt="arrow-right"></a>
                             </div>
                         </div>
                     </div>
@@ -217,13 +229,13 @@
                     <div class="servicos col d-flex justify-content-center justify-content-center align-items-center">
                         <div class="card" style="width: 25rem;" data-aos="zoom-in" data-aos-duration="900ms"
                             data-aos-delay="150">
-                            <img src="img/saúde.png" class="card-img-top" alt="Saúde">
+                            <img src="assets/images/saúde.png" class="card-img-top" alt="Saúde">
                             <div class="card-body p-3">
                                 <h5 class=" card-title">Saúde</h5>
                                 <p class="card-text">Serviços de Saúde realizados pelo
                                     Instituto Zoe</p>
                                 <a href="index-saude.html" class="btn text-primary">Saiba mais <img
-                                        src="img/right-arrow-icon.png" alt="arrow-right"></a>
+                                        src="assets/images/right-arrow-icon.png" alt="arrow-right"></a>
                             </div>
                         </div>
                     </div>
@@ -285,7 +297,7 @@
         <div style="display: flex; align-items: flex-start; gap: 20px;" id="mascote-faq">
 
 
-            <img src="img/Mascote-pensativo.png" alt="Mascote pensativo" class="d-none d-lg-block"
+            <img src="assets/images/Mascote-pensativo.png" alt="Mascote pensativo" class="d-none d-lg-block"
                 data-aos="zoom-in-right" id="mascote_pensativo" style="max-height: 60vh; height: auto;">
 
 
@@ -433,7 +445,7 @@
 
     </main>
 
-    <?php include 'incluir/footer.php'; ?>
+    <?php include 'includes/footer.php'; ?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
@@ -444,7 +456,7 @@
         AOS.init();
     </script>
 
-    <script src="mobile-navbar.js"></script>
+    <script src="../assets/js/navbar.js"></script>
 
 
 
