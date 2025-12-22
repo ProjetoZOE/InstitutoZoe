@@ -1,0 +1,11 @@
+# Bloqueio de acesso direto à pasta /config
+# Protege arquivos de configuração sensíveis
+<FilesMatch "\.php$">
+    Deny from all
+</FilesMatch>
+
+# Alternativamente, redireciona para home
+# <IfModule mod_rewrite.c>
+    # RewriteEngine On
+    # RewriteRule ^ / [R=301,L]
+    # </IfModule>
