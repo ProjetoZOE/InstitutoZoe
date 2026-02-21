@@ -107,18 +107,18 @@ Este repositório tem como finalidade registrar todo o processo de criação e e
    ```
 
 2. **Teste a configuração:**
-   Acesse no navegador: `http://localhost/repo/InstitutoZoe/scripts/test/test-config.php`
+   Acesse no navegador: `http://localhost/public_html/scripts/test/test-config.php`
    
    Todos os testes devem passar com badges verdes ✓
 
 3. **Crie o usuário admin (primeira vez):**
-   Acesse: `http://localhost/repo/InstitutoZoe/scripts/setup/create-admin.php`
+   Acesse: `http://localhost/public_html/scripts/setup/create-admin.php`
    
    Siga as instruções na tela
 
 4. **Acesse o sistema:**
-   - Homepage: `http://localhost/repo/InstitutoZoe/`
-   - Login: `http://localhost/repo/InstitutoZoe/auth/login.php`
+   - Homepage: `http://localhost/public_html/`
+   - Login: `http://localhost/public_html/auth/login.php`
 
 ---
 
@@ -144,7 +144,7 @@ Consulte o guia completo em: [docs/TESTING.md](docs/TESTING.md)
 **Testes rápidos:**
 ```bash
 # 1. Verificar configuração
-http://localhost/repo/InstitutoZoe/scripts/test/test-config.php
+http://localhost/public_html/scripts/test/test-config.php
 
 # 2. Testar fluxo de cadastro/login
 # Acesse auth/login.php e siga os passos

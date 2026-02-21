@@ -49,7 +49,7 @@ if (isset($_POST['acao_reenviar_email'])) {
             $sql_update = "UPDATE usuario SET email_token = ?, email_token_expira = ? WHERE id_usuario = ?";
             if (executarQuery($sql_update, [$novo_token, $nova_expira, $usuario['id_usuario']])) {
                 // Enviar email
-                $link_verificacao = 'http://' . $_SERVER['HTTP_HOST'] . '/repo/InstitutoZoe/auth/login.php?verificar_email=1&token=' . $novo_token;
+                $link_verificacao = 'http://' . $_SERVER['HTTP_HOST'] . '/public_html/auth/login.php?verificar_email=1&token=' . $novo_token;
                 enviarEmailVerificacao($email_reenvio, $usuario['email'], $link_verificacao);
                 
                 $sucesso_reenvio = '✅ Novo email de verificação enviado! Verifique sua caixa de entrada (e spam).';
@@ -196,7 +196,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['acao_cadastro'])) {
                 
                 // Tentar enviar email de verificação se a função existir
                 if (function_exists('enviarEmailVerificacao')) {
-                    $link_verificacao = 'http://' . $_SERVER['HTTP_HOST'] . '/repo/InstitutoZoe/auth/login.php?verificar_email=1&token=' . $email_token;
+                    $link_verificacao = 'http://' . $_SERVER['HTTP_HOST'] . '/public_html/auth/login.php?verificar_email=1&token=' . $email_token;
                     enviarEmailVerificacao($email_limpo, $nome_cadastro, $link_verificacao);
                     $mensagem_sucesso = '✅ Cadastro realizado! Verifique seu email para ativar a conta.';
                 } else {

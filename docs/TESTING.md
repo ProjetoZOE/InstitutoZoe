@@ -4,7 +4,7 @@
 
 ### 1. Teste de Configuração
 **Arquivo:** `scripts/test/test-config.php`
-**Como acessar:** Navegador → `http://localhost/repo/InstitutoZoe/scripts/test/test-config.php`
+**Como acessar:** Navegador → `http://localhost/public_html/scripts/test/test-config.php`
 
 Este script verifica:
 - ✓ Conexão com banco de dados
@@ -18,7 +18,7 @@ Este script verifica:
 
 ### 2. Teste de Dashboard
 **Arquivo:** `scripts/test/test-dashboard.php`
-**Como acessar:** Navegador → `http://localhost/repo/InstitutoZoe/scripts/test/test-dashboard.php`
+**Como acessar:** Navegador → `http://localhost/public_html/scripts/test/test-dashboard.php`
 
 Este script verifica:
 - ✓ Funcionalidade de login
@@ -31,7 +31,7 @@ Este script verifica:
 ## Testes Manuais
 
 ### Fluxo 1: Cadastro e Email Verification
-1. Acesse `http://localhost/repo/InstitutoZoe/auth/login.php?tab=cadastro`
+1. Acesse `http://localhost/public_html/auth/login.php?tab=cadastro`
 2. Preencha: nome, email, senha
 3. Clique "Cadastrar"
 4. **Esperado:** Mensagem de sucesso + email enviado
@@ -74,19 +74,19 @@ Este script verifica:
 
 ### 1. Acesso Direto a /config
 ```
-GET http://localhost/repo/InstitutoZoe/config/database.php
+GET http://localhost/public_html/config/database.php
 Esperado: 403 Forbidden (bloqueado por .htaccess)
 ```
 
 ### 2. Acesso Direto a /scripts
 ```
-GET http://localhost/repo/InstitutoZoe/scripts/setup/create-admin.php
+GET http://localhost/public_html/scripts/setup/create-admin.php
 Esperado: 403 Forbidden (bloqueado por .htaccess)
 ```
 
 ### 3. Acesso Direto a /includes
 ```
-GET http://localhost/repo/InstitutoZoe/includes/navbar.php
+GET http://localhost/public_html/includes/navbar.php
 Esperado: 403 Forbidden (bloqueado por .htaccess)
 ```
 

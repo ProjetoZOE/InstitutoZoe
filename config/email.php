@@ -147,7 +147,7 @@ function enviarEmailSimples($email, $nome, $token = null, $tipo = 'ativacao', $t
     $headers .= "From: " . EMAIL_EQUIPE . "\r\n";
     
     if ($tipo === 'ativacao') {
-        $linkAtivacao = 'http://localhost/repo/InstitutoZoe/ativar-conta.php?token=' . $token;
+        $linkAtivacao = 'http://localhost/public_html/ativar-conta.php?token=' . $token;
         $subject = 'Ative sua conta - Instituto Zoe';
         $body = "
             <h2>Bem-vindo ao Instituto Zoe!</h2>
@@ -207,7 +207,7 @@ function enviarEmailRecuperacaoSenha($email, $nome, $token) {
         $mail->isHTML(true);
         $mail->Subject = 'Redefinir Senha - Instituto Zoe';
         
-        $linkReset = 'http://' . $_SERVER['HTTP_HOST'] . '/repo/InstitutoZoe/auth/redefinir-senha.php?token=' . $token;
+        $linkReset = 'http://' . $_SERVER['HTTP_HOST'] . '/public_html/auth/redefinir-senha.php?token=' . $token;
         
         $mail->Body = "
             <!DOCTYPE html>
@@ -280,7 +280,7 @@ function enviarEmailRecuperacaoSenhaSimples($email, $nome, $token) {
     $headers .= "Content-type: text/html; charset=UTF-8" . "\r\n";
     $headers .= "From: " . EMAIL_EQUIPE . "\r\n";
     
-    $linkReset = 'http://' . $_SERVER['HTTP_HOST'] . '/repo/InstitutoZoe/auth/redefinir-senha.php?token=' . $token;
+    $linkReset = 'http://' . $_SERVER['HTTP_HOST'] . '/public_html/auth/redefinir-senha.php?token=' . $token;
     $subject = 'Redefinir Senha - Instituto Zoe';
     
     $body = "
