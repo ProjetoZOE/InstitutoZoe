@@ -1,0 +1,5 @@
+# Bloqueio de acesso direto à pasta /includes
+# Protege módulos de navegação e footer
+<FilesMatch "\.php$">
+    Deny from all
+</FilesMatch>

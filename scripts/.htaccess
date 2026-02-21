@@ -1,0 +1,5 @@
+# Bloqueio de acesso direto à pasta /scripts
+# Protege scripts de setup e teste
+<FilesMatch "\.php$">
+    Deny from all
+</FilesMatch>
