@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/diogos68/public_html/
+    - /bin/cp -R * $DEPLOYPATHcd /home2/diogos68/repositories/InstitutoZoe
